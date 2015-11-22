@@ -1381,13 +1381,18 @@ font-family: Verdana;
     color: #C9A956 !important;
 }
 
-
+.admin{
+    width: 500px;
+    margin-top: 20px;
+}
 
 .admin input{
     width: 300px;
     height: 30px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    float: right;
+    padding-left: 10px;
 }
 
 .admin label{
@@ -1396,6 +1401,6 @@ font-family: Verdana;
 }
 
 .admin p {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #333;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
 }

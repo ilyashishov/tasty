@@ -18,6 +18,6 @@ class controller_menu extends Controller{
         $data = $this->model->get_data();
         $data['title'] = "Новый товар - Tasty";
         $data["menu"][0] = "m_active";
-        $this->view->generate('./admin/menu/new_view.php', 'template_view.php', $data); 
+        $this->view->generate('admin/new_view.php', 'template_view.php', $data); 
     }
 }
