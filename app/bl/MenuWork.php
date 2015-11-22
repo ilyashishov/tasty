@@ -8,8 +8,9 @@ class MenuWork
     {
         $arr = array();
         $conn = new DbConnector();
-        $query = "SELECT * FROM category ";
+        $query = "SELECT id,name FROM cat";
         $arr = $conn->select($query);
+	$arr['test'] = 'test date';
         return $arr;
     }
 }
