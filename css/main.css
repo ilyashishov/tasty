@@ -1380,3 +1380,22 @@ font-family: Verdana;
     text-decoration: underline !important;
     color: #C9A956 !important;
 }
+
+
+
+.admin input{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.admin label{
+    font-size: 22px;
+    color: #fff;
+}
+
+.admin p {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
