@@ -10,7 +10,6 @@ class Model_menu extends Model{
     {
     	$category = new MenuWork();
     	$arr = $category->GetCategory();
-    	$arr['title'] = 'Доставка еды - Tasty';
         return $arr;
     }
 }
