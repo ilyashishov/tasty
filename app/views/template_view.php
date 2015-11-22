@@ -66,11 +66,15 @@
       </ul>
     </div>
     <div class="category">
-      <?php 
+	<?php 
         $url = explode('/', $_GET['q']);
-        if($url[0] == 'menu'){
-          foreach ($data['category'][0][0] as $key => $value) {
-            echo "<a href='/menu/id/".$key['id']."/'>".$key['name']."</a>";
+        if($url[1] == 'menu'){
+          foreach ($data[0] as $key) {
+		 if ($key['id'] == $url[3]) {
+              echo "<a class='m_active' href='/menu/id/".$key['id']."/'>".$key['name']."</a>";
+            }else{
+              echo "<a href='/menu/id/".$key['id']."/'>".$key['name']."</a>";
+            }
           }
         }
        ?>
