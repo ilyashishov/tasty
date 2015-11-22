@@ -1,5 +1,5 @@
 <div class="admin">
-	<form method="POST" action="/addGoogs/create/">
+	<form method="POST" action="/menu/create/">
 		<p>
 			<label>ID Goods</label>
 			<input type="text">
