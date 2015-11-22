@@ -10,6 +10,6 @@ class MenuWork
         $conn = new DbConnector();
         $query = "SELECT * FROM category ";
         $arr = $conn->select($query);
-        return $data;
+        return $arr;
     }
 }
