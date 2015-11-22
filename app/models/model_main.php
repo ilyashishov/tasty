@@ -8,7 +8,8 @@ class Model_main extends Model{
 
     public function get_data()
     {
-    	$arr['title'] = 'Доставка еды - Tasty';
+    	$category = new MenuWork();
+    	$arr['category'] = $category->GetCategory();
         return $arr;
     }
 }

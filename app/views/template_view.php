@@ -66,6 +66,14 @@
       </ul>
     </div>
     <div class="category">
+      <?php 
+        $url = explode('/', $_GET['q']);
+        if($url[0] == 'menu'){
+          foreach ($data['category'][0][0] as $key => $value) {
+            echo "<a href='/menu/id/".$key['id']."/'>".$key['name']."</a>";
+          }
+        }
+       ?>
     </div>
     <div class="header-right">
       <p>г. Тюмень</p>
