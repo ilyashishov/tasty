@@ -70,7 +70,7 @@
         $url = explode('/', $_GET['q']);
         if($url[1] == 'menu'){
           foreach ($data[0] as $key) {
-		 if ($key['id'] == $url[3]) {
+		        if ($key['id'] == $url[3]) {
               echo "<a class='m_active' href='/menu/id/".$key['id']."/'>".$key['name']."</a>";
             }else{
               echo "<a href='/menu/id/".$key['id']."/'>".$key['name']."</a>";
@@ -90,6 +90,8 @@
     </div>
     <div class="border"></div>
     <div style="clear: both"></div>
+    <a href="/menu/new">Добавить товар</a>
+    <a href="/menu/new_category">Добавить категорию</a>
  </div>
      <div class="wripper" style="padding:0px;">
     <div class="s-right">

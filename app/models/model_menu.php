@@ -12,4 +12,14 @@ class Model_menu extends Model{
     	$arr = $category->GetCategory();
         return $arr;
     }
+
+    public function create($data){
+        $goods = new MenuWork();
+        $goods->CreateGoods($data);
+    }
+
+    public function crate_category($data){
+        $category = new MenuWork();
+        $category->CrateCategory();
+    }
 }

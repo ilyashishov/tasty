@@ -1394,7 +1394,20 @@ font-family: Verdana;
     float: right;
     padding-left: 10px;
 }
-
+.admin input[type="submit"]{
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 19px;
+}
+.admin textarea{
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    float: right;
+    padding-left: 10px;
+}
 .admin label{
     font-size: 22px;
     color: #fff;
