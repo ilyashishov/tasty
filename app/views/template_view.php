@@ -26,6 +26,7 @@
     <script src="/js/main.js?<?php echo md5_file("js/main.js")?>" type="text/javascript"></script>
     <link rel="stylesheet" href="/css/jquery-ui-1.10.1.css">
     <link rel="stylesheet" href="/icon/style.css" type="text/css" charset="utf-8" />
+    <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
 </head>
 <body>
  <div class="wripper">
