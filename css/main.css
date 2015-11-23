@@ -1435,7 +1435,6 @@ body{
     color: #333;
     text-decoration: none;
     opacity: .5;
-    margin: 0px;
 }
 
 .delete-icon{
@@ -1446,7 +1445,7 @@ body{
    color: #333;
    text-decoration: none;
    opacity: .5;
-   margin: 0px;
+   margin-right: 0px !important;
 }
 .edit-icon:hover, .delete-icon:hover{
     opacity: 1;
