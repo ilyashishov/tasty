@@ -1,6 +1,6 @@
 <div class="admin">
 	<form method="POST" action="/menu/create/">
-		<input type="text" name="id_cat" value='<?php echo $url[4]; ?>'>
+		<input type="text" name="id_cat" value='<?php echo $url[4]; ?>' style="display:none">
 		<p>
 			<label>Name Goods</label>
 			<input type="text"  name="name">
