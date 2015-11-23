@@ -29,6 +29,7 @@ class controller_menu extends Controller{
     }
 
     function actuon_create(){
+        print_r($_POST);
         $this->model->create($_POST);
     }
 
