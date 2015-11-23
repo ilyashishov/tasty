@@ -2,10 +2,10 @@
 	<!-- DESC -->
 	<div class="desc" id="desc">
 		<div class="desc_block">
-			<a href="#" class="desc_close" ><img src="./img/desc_close.png" alt=""></a>
+			<a href="#" class="desc_close" ><img src=".img/desc_close.png" alt=""></a>
 			<div style="clear: both"></div>
 			<center>
-				<img src="./img/menu/rolly1/Kalifornija_s_lososem.png" class="img_desc" alt="">
+				<img src="/img/menu/rolly1/Kalifornija_s_lososem.png" class="img_desc" alt="">
 			</center> 
 			<p class="desc_name" id="desc_name">Name</p>          
 			<p class="p_desc" id="p_desc">Состав: <span></span></p>
