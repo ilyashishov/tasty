@@ -18,8 +18,8 @@ class Model_menu extends Model{
         $goods->CreateGoods($data);
     }
 
-    public function crate_category($data){
+    public function get_crate_category($data){
         $category = new MenuWork();
-        $category->CrateCategory();
+        $category->CrateCategory($data);
     }
 }

@@ -29,10 +29,10 @@ class controller_menu extends Controller{
     }
 
     function actuon_create(){
-        $this->$model->create($_POST);
+        $this->model->create($_POST);
     }
 
-    function action_crate_category(){
-        $this->$model->crate_category($_POST);
+    function action_crateCategory(){
+        $this->model->get_crate_category($_POST);
     }
 }
