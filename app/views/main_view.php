@@ -16,28 +16,28 @@
       </a>
     </div>
     <div class="w">
-      <a href="menu.php?id_cat=2">  <img src="./img/menu/r.png" alt="">
+      <a href="/menu/id/3">  <img src="./img/menu/r.png" alt="">
         Роллы
       </a>
     </div>
 
     <div class="w">
-      <a href="menu.php?id_cat=4">  <img src="./img/menu/s.png" alt="">
+      <a href="/menu/id/4">  <img src="./img/menu/s.png" alt="">
         СУШИ
       </a>
     </div>
     <div class="w">
-      <a href="menu.php?id_cat=6">  <img src="./img/menu/set.png" alt="">
+      <a href="/menu/id/6">  <img src="./img/menu/set.png" alt="">
         СЕТЫ
       </a>
     </div>
     <div class="w">
-      <a href="menu.php?id_cat=5">  <img src="./img/menu/p.png" alt="">
+      <a href="/menu/id/5">  <img src="./img/menu/p.png" alt="">
         ПИЦЦА
       </a>
     </div>
     <div class="w">
-      <a href="lapsh.php">  <img src="./img/menu/k.png" alt="">
+      <a href="/menu/id/7">  <img src="./img/menu/k.png" alt="">
         КИТАЙСКАЯ <br> ЛАПША
       </a>
     </div>

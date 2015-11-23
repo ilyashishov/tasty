@@ -37,7 +37,7 @@
           if(isset($data["menu"][0])){
             echo '<li  ><a class="m '.$data["menu"][0].'" href="/menu/id/2" name="topnavi">Меню</a></li>';
           }else{
-            echo '<li  ><a class="m" href="/menu/id/2" name="topnavi">Меню</a></li>';
+            echo '<li  ><a class="m" href="/menu/id/3" name="topnavi">Меню</a></li>';
           }
         ?>
 
