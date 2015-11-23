@@ -31,11 +31,16 @@ class controller_menu extends Controller{
     function action_create(){
         $data = $this->model->create($_POST);
         if($data[0] == 00000 && $data[1] == ''){
-            // header('Location: http://www.tigir.com/php.htm');
+            $host = $_SERVE['HTTP_HOST'];
+            header('Location: http://www.'.$host.'/menu/id/'.$_POST['id_cat']);
         }
     }
 
     function action_crateCategory(){
         $this->model->get_crate_category($_POST);
+        if($data[0] == 00000 && $data[1] == ''){
+            $host = $_SERVE['HTTP_HOST'];
+            header('Location: http://www.'.$host.'/menu/id/3');
+        }
     }
 }
