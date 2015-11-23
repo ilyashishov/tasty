@@ -45,6 +45,8 @@ class controller_menu extends Controller{
         if($data[0] == 00000 && $data[1] == ''){
             $host = $_SERVER['HTTP_HOST'];
             header('Location: http://'.$host.'/menu/id/'.$_POST['id_cat']);
+        }else{
+            print_r($data);
         }
     }
 
@@ -53,6 +55,18 @@ class controller_menu extends Controller{
         if($data[0] == 00000 && $data[1] == ''){
             $host = $_SERVER['HTTP_HOST'];
             header('Location: http://'.$host.'/menu/id/3');
+        }else{
+            print_r($data);
+        }
+    }
+
+    function action_seve(){
+        $this->model->save($_POST);
+        if($data[0] == 00000 && $data[1] == ''){
+            $host = $_SERVER['HTTP_HOST'];
+            header('Location: http://'.$host.'/menu/id/'.$_POST['id_cat']);
+        }else{
+            print_r($data);
         }
     }
 }

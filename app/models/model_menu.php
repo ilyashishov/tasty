@@ -28,6 +28,12 @@ class Model_menu extends Model{
         return $arr;
     }
 
+    public function save($data){
+        $goods = new MenuWork();
+        $arr = $goods->UpdateGoods($data);
+        return $arr;
+    }
+
     public function get_crate_category($data){
         $category = new MenuWork();
         $category->CrateCategory($data);
