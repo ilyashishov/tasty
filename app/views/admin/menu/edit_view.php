@@ -1,6 +1,6 @@
 <div class="admin">
 	<form method="POST" action="/menu/save/">
-		<input type="text" name="id_cat" value="<?php echo $data['goods'][0][0]['id'] ?>" style="display:none">
+		<input type="text" name="id" value="<?php echo $data['goods'][0][0]['id'] ?>" style="display:none">
 		<p>
 			<label>Name Goods</label>
 			<input type="text"  name="name" value="<?php echo $data['goods'][0][0]['name'] ?>">
