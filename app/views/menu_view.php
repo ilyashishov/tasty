@@ -14,9 +14,8 @@
 	</div> 
 	<!-- DESC -->
 	<div class="cont2">
-	<?php print_r($data) ?>
 		<?php 
-			foreach ($data['goods'] as $key) {
+			foreach ($data['goods'][0] as $key) {
 				printf('
 						<div class="block">
 							<div class="open_desc">
