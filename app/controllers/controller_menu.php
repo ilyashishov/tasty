@@ -29,8 +29,10 @@ class controller_menu extends Controller{
     }
 
     function action_create(){
-        print_r($_POST);
-        $this->model->create($_POST);
+        $data = $this->model->create($_POST);
+        if($data[0] == 00000 && $data[1] == ''){
+            // header('Location: http://www.tigir.com/php.htm');
+        }
     }
 
     function action_crateCategory(){

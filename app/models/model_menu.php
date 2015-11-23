@@ -15,7 +15,8 @@ class Model_menu extends Model{
 
     public function create($data){
         $goods = new MenuWork();
-        $goods->CreateGoods($data);
+        $arr = $goods->CreateGoods($data);
+        return $arr;
     }
 
     public function get_crate_category($data){

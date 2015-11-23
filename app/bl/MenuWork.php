@@ -17,7 +17,7 @@ class MenuWork
         $conn = new DbConnector();
         $query = "INSERT INTO goods (\"name\",\"id_cat\",\"desc\",\"m_desc\",\"img\",\"m_img\",\"weight\",\"price\") VALUES('$data[name]','$data[id_cat]','$data[desc]','$data[m_desc]','$data[img]','$data[m_img]','$data[weight]','$data[price]')";
         $conn->select($query);
-        print_r($conn->error());
+        return $conn->error();
     }
 
     public function CrateCategory($data){
