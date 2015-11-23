@@ -9,7 +9,7 @@ class controller_menu extends Controller{
 
     function action_index(){
         $data = $this->model->get_data();
-        $data['goods'] = $this->model->get_goods();
+        $data['goods'] = $this->model->get_all_goods();
         $data['title'] = "Меню - Tasty";
         $data["menu"][0] = "m_active";
         if($_GET['q'] == '/menu/id/7/'){
@@ -24,6 +24,13 @@ class controller_menu extends Controller{
         $data['title'] = "Новый товар - Tasty";
         $data["menu"][0] = "m_active";
         $this->view->generate('admin/menu/new_view.php', 'template_view.php', $data); 
+    }
+
+    function action_edit(){
+        $data['goods'] = $this->model->get_goods();
+        $data['title'] = "Новый товар - Tasty";
+        $data["menu"][0] = "m_active";
+        $this->view->generate('admin/menu/edit_view.php', 'template_view.php', $data); 
     }
 
     function action_new_category(){
