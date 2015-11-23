@@ -43,7 +43,7 @@ class MenuWork
 
 	public function UpdateGoods($data){
 		$conn = new DbConnector();
-        $query = "UPDATE goods SET \"name\" = '$data[name]',\"id_cat\" = '$data[id_cat]',\"desc\" = '$data[desc]',\"m_desc\" ='$data[m_desc]',\"img\" = '$data[img]',\"m_img\" = '$data[m_img]',\"weight\" = '$data[weight]',\"price\" = '$data[price]' WHERE id = '$data[id]'";
+        $query = "UPDATE goods SET \"name\" = '$data[name]', \"id_cat\" = '$data[id_cat]', \"desc\" = '$data[desc]', \"m_desc\" ='$data[m_desc]', \"img\" = '$data[img]', \"m_img\" = '$data[m_img]', \"weight\" = '$data[weight]', \"price\" = '$data[price]' WHERE id = '$data[id]'";
         $conn->select($query);
         return $conn->error();
 	}
