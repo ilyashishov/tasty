@@ -1435,16 +1435,18 @@ body{
     color: #333;
     text-decoration: none;
     opacity: .5;
+    margin: 0px;
 }
 
 .delete-icon{
- position: absolute;
- top: 6px;
- right: 6px;
- z-index: 3;
- color: #333;
- text-decoration: none;
- opacity: .5; 
+   position: absolute;
+   top: 6px;
+   right: 6px;
+   z-index: 3;
+   color: #333;
+   text-decoration: none;
+   opacity: .5;
+   margin: 0px;
 }
 .edit-icon:hover, .delete-icon:hover{
     opacity: 1;
