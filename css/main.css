@@ -1374,6 +1374,7 @@ body{
 .middle{
     width: 760px;
     min-height: 440px;
+    margin-left: 20px;
 }
 
 .m_active{

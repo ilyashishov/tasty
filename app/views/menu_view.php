@@ -15,9 +15,10 @@
 	<!-- DESC -->
 	<div class="cont2">
 		<?php 
+			$edit = '<p class="lsf symbol" style="font-size: 100px;">edit</p>';
 			foreach ($data['goods'][0] as $key) {
 				printf('
-						<div class="block">
+						<div class="block">'.$edit.'
 							<div class="open_desc">
 								<a href="#" class="img_open_desc" src2="%s" name="%s" desc="%s" ves="%s" ><img  style="width:34px;height:34px;" src="/img/open_desc.png" alt=""></a>
 							</div>
