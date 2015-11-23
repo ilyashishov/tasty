@@ -18,9 +18,11 @@
 			
 			foreach ($data['goods'][0] as $key) {
 				$edit = '<a  href="/menu/edit/id/'.$key["id"].'" class="lsf symbol edit-icon" style="font-size: 30px;">edit</a>';
-				$delete = '<a  href="/menu/delete/id/'.$key["id"].'" class="lsf symbol delete-icon" style="font-size: 30px;">delete</a>'
+				$delete = '<a  href="/menu/delete/id/'.$key["id"].'" class="lsf symbol delete-icon" style="font-size: 30px;">delete</a>';
 				printf('
-						<div class="block">'.$edit.'
+						<div class="block">
+							'.$edit.'
+							'.$delete.'
 							<div class="open_desc">
 								<a href="#" class="img_open_desc" src2="%s" name="%s" desc="%s" ves="%s" ><img  style="width:34px;height:34px;" src="/img/open_desc.png" alt=""></a>
 							</div>
