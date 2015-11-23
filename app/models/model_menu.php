@@ -12,7 +12,11 @@ class Model_menu extends Model{
     	$arr = $category->GetCategory();
         return $arr;
     }
-
+    public function get_goods(){
+        $goods = new MenuWork();
+        $arr = $goods->Goods($this->_data['id']);
+        return $arr;
+    }
     public function create($data){
         $goods = new MenuWork();
         $arr = $goods->CreateGoods($data);

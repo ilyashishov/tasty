@@ -8,7 +8,7 @@ class controller_menu extends Controller{
     }
 
     function action_index(){
-        $data = $this->model->get_data();
+        $data['goods'] = $this->model->get_data();
         $data['title'] = "Меню - Tasty";
         $data["menu"][0] = "m_active";
         $this->view->generate('menu_view.php', 'template_view.php', $data);

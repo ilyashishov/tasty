@@ -12,6 +12,13 @@ class MenuWork
         $arr = $conn->select($query);
         return $arr;
     }
+    public function Goods($id_cat){
+    	$arr = array();
+        $conn = new DbConnector();
+        $query = "SELECT * FROM goods WHERE id_cat = '$id_cat'";
+        $arr = $conn->select($query);
+        return $arr;
+    }
 
     public function CreateGoods($data){
         $conn = new DbConnector();
