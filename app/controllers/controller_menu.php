@@ -62,7 +62,7 @@ class controller_menu extends Controller{
 
     function action_save(){
         $data = $this->model->save($_POST);
-        if($data[0] == 00000 && $data[1] == '34'){
+        if($data[0] == 00000 && $data[1] == ''){
             $host = $_SERVER['HTTP_HOST'];
             header('Location: http://'.$host.'/menu/id/3');
         }else{
