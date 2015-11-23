@@ -28,7 +28,7 @@ class controller_menu extends Controller{
         $this->view->generate('admin/category/new_view.php', 'template_view.php', $data); 
     }
 
-    function actuon_create(){
+    function action_create(){
         print_r($_POST);
         $this->model->create($_POST);
     }
