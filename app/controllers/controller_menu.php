@@ -12,7 +12,11 @@ class controller_menu extends Controller{
         $data['goods'] = $this->model->get_goods();
         $data['title'] = "Меню - Tasty";
         $data["menu"][0] = "m_active";
-        $this->view->generate('menu_view.php', 'template_view.php', $data);
+        if($_GET['q'] == '/menu/id/7/'){
+            $this->view->generate('noodles_view.php', 'template_view.php', $data);
+        }else{
+            $this->view->generate('menu_view.php', 'template_view.php', $data);
+        }
     }
 
     function action_new(){
