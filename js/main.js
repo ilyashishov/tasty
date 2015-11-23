@@ -5,6 +5,7 @@
     	});
     });
 })(jQuery);
+
 $(document).on('click', '.img_open_desc', function(){
 	var src = $(this).attr('src2');
 	var name = $(this).attr('name');
@@ -17,3 +18,8 @@ $(document).on('click', '.img_open_desc', function(){
 	$('#desc').show();
 	return false;
 });
+
+$('.desc_close').click(function(){ 
+	$('#desc').hide();
+    return false;
+});  
