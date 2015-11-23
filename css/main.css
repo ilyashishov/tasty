@@ -525,7 +525,7 @@ body{
     height: 450px;
     position: absolute;
     top: 0px;
-    right: 20px;
+    right: 10px;
 }
 .st{
     color: #C9A956;
@@ -1374,7 +1374,7 @@ body{
 .middle{
     width: 760px;
     min-height: 440px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .m_active{
