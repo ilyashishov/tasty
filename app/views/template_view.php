@@ -12,7 +12,6 @@
     <script src="/js/jquery-2.1.1.min.js" type="text/javascript"></script>
     <script src="/js/jquery.scrollTo-1.4.3.1.js" type="text/javascript"></script>
     <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js" type="text/javascript"></script>
-    <script src="/js/main.js?<?php echo md5_file("js/main.js")?>" type="text/javascript"></script>
     <link rel="stylesheet" href="/icon/style.css" type="text/css" charset="utf-8" />
     <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <link rel="stylesheet" href="/js/jquery.mCustomScrollbar.css"> 
@@ -190,5 +189,6 @@
   </a> <div style="clear: both"></div>
   </div>
   </div>
+  <script src="/js/main.js?<?php echo md5_file("js/main.js")?>" type="text/javascript"></script>
 </body>
 </html>
