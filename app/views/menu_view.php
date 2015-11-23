@@ -15,8 +15,9 @@
 	<!-- DESC -->
 	<div class="cont2">
 		<?php 
-			$edit = '<p class="lsf symbol" style="font-size: 100px;">edit</p>';
+			
 			foreach ($data['goods'][0] as $key) {
+				$edit = '<a  href="/menu/edit/id/'.$key["id"].'" class="lsf symbol edit-icon" style="font-size: 50px;">edit</a>';
 				printf('
 						<div class="block">'.$edit.'
 							<div class="open_desc">
