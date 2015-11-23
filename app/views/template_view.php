@@ -90,8 +90,13 @@
     </div>
     <div class="border"></div>
     <div style="clear: both"></div>
-    <a href="/menu/new">Добавить товар</a>
-    <a href="/menu/new_category">Добавить категорию</a>
+    <?php 
+    if($url[1] == 'menu'){
+          print_r($url);
+        }
+     ?>
+    <a class="a-admin-page" href="/menu/new/id/<?php echo $url[3] ?>" >Добавить товар</a>
+    <a class="a-admin-page" href="/menu/new_category">Добавить категорию</a>
  </div>
      <div class="wripper" style="padding:0px;">
     <div class="s-right">
