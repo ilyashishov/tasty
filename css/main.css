@@ -1437,6 +1437,15 @@ body{
     opacity: .5;
 }
 
-.edit-icon:hover{
+.delete-icon{
+ position: absolute;
+ top: 6px;
+ right: 6px;
+ z-index: 3;
+ color: #333;
+ text-decoration: none;
+ opacity: .5; 
+}
+.edit-icon:hover, .delete-icon:hover{
     opacity: 1;
 }

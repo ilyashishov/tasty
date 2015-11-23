@@ -18,6 +18,7 @@
 			
 			foreach ($data['goods'][0] as $key) {
 				$edit = '<a  href="/menu/edit/id/'.$key["id"].'" class="lsf symbol edit-icon" style="font-size: 30px;">edit</a>';
+				$delete = '<a  href="/menu/delete/id/'.$key["id"].'" class="lsf symbol delete-icon" style="font-size: 30px;">delete</a>'
 				printf('
 						<div class="block">'.$edit.'
 							<div class="open_desc">
