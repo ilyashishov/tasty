@@ -19,14 +19,14 @@
 				printf('
 						<div class="block">
 							<div class="open_desc">
-								<a href="#" class="img_open_desc" src2="%s" name="%s" desc="%s" ves="%s" ><img  style="width:34px;height:34px;" src="./img/open_desc.png" alt=""></a>
+								<a href="#" class="img_open_desc" src2="%s" name="%s" desc="%s" ves="%s" ><img  style="width:34px;height:34px;" src="/img/open_desc.png" alt=""></a>
 							</div>
 							<img src="%s" alt="">
 							<div class="number" id="number%s" style="display: none;">
 								<!-- value="<?php echo $prow->quantity ?>" --> 
 								<input type="text" title="" class="inputbox input-ultra-mini" size="3" maxlength="4" name="quantity"  value="1" />
-								<a href="#" id_good="%s" price="%s"  class="plus" style="left:108px;top:49px" ><img src="./img/plus.png" style="width:14px;height:14px;" alt=""></a>
-								<a href="#" id_good="%s" price="%s" class="minus"  style="left:35px;top:45px" ><img src="./img/minus.png" style="width:15px;height:5px;" alt=""></a>
+								<a href="#" id_good="%s" price="%s"  class="plus" style="left:108px;top:49px" ><img src="/img/plus.png" style="width:14px;height:14px;" alt=""></a>
+								<a href="#" id_good="%s" price="%s" class="minus"  style="left:35px;top:45px" ><img src="/img/minus.png" style="width:15px;height:5px;" alt=""></a>
 							</div>
 							<div class="b">
 								<p class="weight">%s руб./%s г.</p>
