@@ -60,7 +60,7 @@ class controller_menu extends Controller{
         }
     }
 
-    function action_seve(){
+    function action_save(){
         $this->model->save($_POST);
         if($data[0] == 00000 && $data[1] == ''){
             $host = $_SERVER['HTTP_HOST'];
