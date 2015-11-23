@@ -1,12 +1,8 @@
-<?php
-//exit(__DIR__);
- ?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <link rel="shortcut icon" href="/img/icon.png" type="image/png">
     <meta name="description" content="<?php echo $data['description'];?>">
     <meta name="keywords" content="<?php echo $data['keywords'];?>">
     <title><?php echo $data['title']; ?></title>
@@ -15,16 +11,8 @@
     <link rel="stylesheet" href="/css/main.css?<?php echo md5_file("css/main.css");?>">
     <script src="/js/jquery-2.1.1.min.js" type="text/javascript"></script>
     <script src="/js/jquery.scrollTo-1.4.3.1.js" type="text/javascript"></script>
-    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
     <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js" type="text/javascript"></script>
-    <script src="/js/jquery.ui.touch-punch.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.ui.datepicker-ru.js"></script>
-    <script type="text/javascript" src="/js/jquery.inputmask.bundle.js"></script>
-    <script src="/js/jquery.mask.min.js" type="text/javascript"></script>
-    <script src="/js/jquery.filter_input.js" type="text/javascript"></script>
-    <script src="/js/handlebars-v3.0.3.js"></script>
     <script src="/js/main.js?<?php echo md5_file("js/main.js")?>" type="text/javascript"></script>
-    <link rel="stylesheet" href="/css/jquery-ui-1.10.1.css">
     <link rel="stylesheet" href="/icon/style.css" type="text/css" charset="utf-8" />
     <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <link rel="stylesheet" href="/js/jquery.mCustomScrollbar.css"> 
