@@ -1429,9 +1429,14 @@ body{
 
 .edit-icon{
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 6px;
+    left: 6px;
     z-index: 3;
     color: #333;
     text-decoration: none;
+    opacity: .5;
+}
+
+.edit-icon:hover{
+    opacity: 1;
 }

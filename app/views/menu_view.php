@@ -17,7 +17,7 @@
 		<?php 
 			
 			foreach ($data['goods'][0] as $key) {
-				$edit = '<a  href="/menu/edit/id/'.$key["id"].'" class="lsf symbol edit-icon" style="font-size: 40px;">edit</a>';
+				$edit = '<a  href="/menu/edit/id/'.$key["id"].'" class="lsf symbol edit-icon" style="font-size: 30px;">edit</a>';
 				printf('
 						<div class="block">'.$edit.'
 							<div class="open_desc">
