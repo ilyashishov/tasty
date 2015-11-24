@@ -63,7 +63,7 @@ $(document).on('click', '.plus', function(){
 		type: 'post',
 		data: {id : id},
 		success: function (data) {
-			$('#number'+id+' input').val(val+1);
+			$('#number'+id+' input').val((val - 0)+1);
 			$('.baskets_cost span').text(data);
 		}
 	});
