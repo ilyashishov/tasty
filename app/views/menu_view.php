@@ -24,13 +24,16 @@
 				foreach ($_SESSION['basket'] as $key2 => $value2) {
 					if($key['id'] == $value2 && $buy == 0){
 						$buy = 1;
+						$display = 'block';
 					}else{
 						$buy = 0;
+						$display = 'none';
 					}
 					if($key['id'] == $value2) $i++;
 
 				}
 				if(!$i)$i = 1;
+
 				printf('
 						<div class="block">
 							'.$edit.'
@@ -39,7 +42,7 @@
 								<a href="#" class="img_open_desc" src2="%s" name="%s" desc="%s" ves="%s" ><img  style="width:34px;height:34px;" src="/img/open_desc.png" alt=""></a>
 							</div>
 							<img src="%s" alt="">
-							<div class="number" id="number%s" style="display: '.if($buy){echo "none";}else{ echo "block";}.'">
+							<div class="number" id="number%s" style="display: '.$display.'">
 								<!-- value="<?php echo $prow->quantity ?>" --> 
 								<input type="text" title="" class="inputbox input-ultra-mini" size="3" maxlength="4" name="quantity"  value="'.$i.'" />
 								<a href="#" id_good="%s" price="%s"  class="plus" style="left:108px;top:49px" ><img src="/img/plus.png" style="width:14px;height:14px;" alt=""></a>
