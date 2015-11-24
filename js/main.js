@@ -63,9 +63,9 @@ $(document).on('click', '.plus', function(){
 		type: 'post',
 		data: {id : id},
 		success: function (data) {
-			$('#number'+id+' input').val(val+1)
 			$('.baskets_cost span').text(data);
 		}
 	});
+	$('#number'+id+' input').val(val+1);	
 	return false;
 });
