@@ -10,10 +10,15 @@ class controller_share extends Controller{
     function action_menu(){
         $data = $this->model->get_data();
         $data['title'] = "Доставка еды - Tasty";
-        $data['description'] = "";
-        $data['keywords'] = "";
         $data["menu"][1] = "m_active";
-        $data['ext'] = true;
         $this->view->generate('share_view.php', 'template_view.php', $data);
+    }
+
+    function action_add(){
+        $data = $this->model->set_shere($_POST['id']);
+    }
+
+    function action_update(){
+        $data = $this->model->delete_shere();
     }
 }

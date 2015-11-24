@@ -1,5 +1,6 @@
 <?php if(!isset($_SESSION)){
     session_start();
+    $_SESSION['shere'] = 0;
 } ?>
 <!DOCTYPE html>
 <html lang="ru">

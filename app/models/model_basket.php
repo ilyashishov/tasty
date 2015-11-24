@@ -15,7 +15,9 @@ class Model_basket extends Model{
         	$arr = $goods->Goods($value);
         	$allPrice += $arr[0][0]['price'];
     	}
-    	$_SESSION['price'] = $allPrice;
+    	$allPriceShere = ($allPrice * $_SESSION['shere']) / 100;
+        $allPrice -= $allPriceShere;
+        $_SESSION['price'] = $allPrice;
     	return print_r($allPrice);
     }
 
@@ -31,7 +33,9 @@ class Model_basket extends Model{
         	$arr = $goods->Goods($value);
         	$allPrice += $arr[0][0]['price'];
     	}
-    	$_SESSION['price'] = $allPrice;
+    	$allPriceShere = ($allPrice * $_SESSION['shere']) / 100;
+        $allPrice -= $allPriceShere;
+        $_SESSION['price'] = $allPrice;
     	return print_r($allPrice);
     }
 
@@ -48,7 +52,9 @@ class Model_basket extends Model{
         	$arr = $goods->Goods($value);
         	$allPrice += $arr[0][0]['price'];
     	}
-    	$_SESSION['price'] = $allPrice;
+    	$allPriceShere = ($allPrice * $_SESSION['shere']) / 100;
+        $allPrice -= $allPriceShere;
+        $_SESSION['price'] = $allPrice;
     	return print_r($allPrice);
     }
 }
