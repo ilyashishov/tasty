@@ -33,5 +33,6 @@ $(document).on('click', '.add_good', function(){
 			console.log(data);
 		}
 	});
+	console.log($(this).attr('id'));
 	return false;
 });
