@@ -26,10 +26,8 @@ $('.desc_close').click(function(){
 
 $(document).on('click', '.add_good', function(){
 	var id = $(this).attr('id');
-	var buy = $(this).attr('buy');
-	$(this).attr('buy', 0);
-	console.log(buy);
-	if(buy == 0){
+	var buy = $(this);
+	if(buy.attr('buy') == 0){
 		$.ajax({
 			url: '/basket/add',
 			type: 'post',
@@ -38,7 +36,7 @@ $(document).on('click', '.add_good', function(){
 				console.log(data);
 				$('.baskets_cost span').text(data);
 				$('#number'+id).show();
-				$(this).attr('buy', 1);
+				buy.attr('buy', 1);
 			}
 		});
 	}else{
@@ -50,7 +48,7 @@ $(document).on('click', '.add_good', function(){
 				console.log(data);
 				$('.baskets_cost span').text(data);
 				$('#number'+id).hide();
-				$(this).attr('buy', 0);
+				buy.attr('buy', 0);
 			}
 		});
 	}
