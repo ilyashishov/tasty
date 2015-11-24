@@ -117,7 +117,7 @@ $(document).on('click', '.proc1', function(){
 			$('#discount span').text(id);
 		}
 	});
-	$(this).parent('.s').removeClass('active_shere');
+	$('.s').removeClass('active_shere');
 	$(this).parent('.s').addClass('active_shere');
 	return false;
 });
