@@ -14,7 +14,7 @@ class controller_share extends Controller{
         $this->view->generate('share_view.php', 'template_view.php', $data);
     }
 
-    function action_add(){
+    function action_set(){
         $data = $this->model->set_shere($_POST['id']);
     }
 

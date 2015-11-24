@@ -1450,3 +1450,18 @@ body{
 .edit-icon:hover, .delete-icon:hover{
     opacity: 1;
 }
+
+.active_shere{
+    z-index: 1;
+    height: 94px;
+    margin-bottom: -20px;
+    background: url(/img/share_none.png);
+}
+
+.active_shere p{
+    color: rgb(93, 79, 42) !important;
+}
+
+.active_shere a{
+    color: rgb(27, 27, 23) !important;
+}

@@ -103,3 +103,20 @@ $(document).on('click', '.minus', function(){
 	
 	return false;
 });
+
+
+$(document).on('click', '.proc1', function(){
+	var id = $(this).attr('p');
+	$.ajax({
+		url: '/share/set',
+		type: 'post',
+		data: {id : id},
+		success: function (data) {
+			console.log(data);
+			$('.baskets_cost span').text(data);
+			$('#discount span').text(id);
+		}
+	});
+	$(this).addClass('active_shere');
+	return false;
+});
