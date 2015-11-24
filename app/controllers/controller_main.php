@@ -9,7 +9,6 @@ class controller_main extends Controller{
 
     function action_index(){
         $data = $this->model->get_data();
-        $data['basket'] = $this->model->get_data_basket();
         $data['title'] = "Доставка еды - Tasty";
         $this->view->generate('main_view.php', 'template_view.php', $data);
     }

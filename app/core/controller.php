@@ -13,5 +13,6 @@ abstract class Controller {
 
     function action_index()
     {
+        $data['basket'] = 9999;
     }
 }
