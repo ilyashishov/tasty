@@ -55,3 +55,17 @@ $(document).on('click', '.add_good', function(){
 	
 	return false;
 });
+$(document).on('click', '.plus', function(){
+	var id = $(this).attr('id_good');
+	var val = $('#number'+id+' input').val();
+	$.ajax({
+		url: '/basket/add',
+		type: 'post',
+		data: {id : id},
+		success: function (data) {
+			$('#number'+id+' input').val(val+1);
+			$('.baskets_cost span').text(data);
+		}
+	});
+	return false;
+});
