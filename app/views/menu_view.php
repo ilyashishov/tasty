@@ -38,10 +38,10 @@
 								<p class="name">%s</p>
 								<p class="m_desc">%s</p>
 								<a href=""><div class="buy"></div></a>
-								<a id="%s" buy="0" href="#" price="%s" class="add_good" onClick=a%s_onclick() ><div class="buy"></div></a>
+								<a id="%s" buy="0" href="#" price="%s" class="add_good" ><div class="buy"></div></a>
 							</div>
 						</div>
-						',$key["m_img"],$key["name"],$key["m_desc"],$key["weight"],$key["img"],$key["id"],$key["id"],$key["price_good"],$key["id_good"],$key["price"],$key["price"],$key["weight"],$key["name"],$key["desc"],$key["id"],$key["price"],$key["id"]);
+						',$key["m_img"],$key["name"],$key["m_desc"],$key["weight"],$key["img"],$key["id"],$key["id"],$key["price_good"],$key["id_good"],$key["price"],$key["price"],$key["weight"],$key["name"],$key["desc"],$key["id"],$key["price"]);
 			}
 		 ?>
 	</div>

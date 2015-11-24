@@ -9,5 +9,6 @@ class controller_basket extends Controller{
 
     function action_add(){
         $data = $this->model->set_basket($_POST['id']);
+        require $data;
     }
 }
