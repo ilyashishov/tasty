@@ -30,7 +30,7 @@
 					if($key['id'] == $value2) $i++;
 
 				}
-				if(!$i)$ = 1;
+				if(!$i)$i = 1;
 				printf('
 						<div class="block">
 							'.$edit.'
