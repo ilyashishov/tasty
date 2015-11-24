@@ -159,7 +159,7 @@
     <div class="wripper" style="background: none;position:relative;">
     <div class="baskets">
       <div class="block_cost">
-      <p id="sum" class="baskets_cost">ВАШ ЗАКАЗ:<span>&nbsp;<?php echo $data['basket']; ?></span></p> 
+      <p id="sum" class="baskets_cost">ВАШ ЗАКАЗ:<span>&nbsp;<?php echo $_SESSION['price']; ?></span></p> 
         <img src="/img/rub.png" class="baskets_img" alt="">
       </div>    
       <a href="basket_active.php" class="checkout">ПОСМОТРЕТЬ ЗАКАЗ<img  src="/img/basket_buy.png" alt=""></a>
