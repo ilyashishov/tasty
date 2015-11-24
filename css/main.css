@@ -1452,10 +1452,10 @@ body{
 }
 
 .active_shere{
-    z-index: 1;
-    height: 94px;
-    margin-bottom: -20px;
-    background: url(/img/share_none.png);
+    z-index: 1 !important;
+    height: 94px !important; 
+    margin-bottom: -20px !important;
+    background: url(/img/share_none.png) !important;
 }
 
 .active_shere p{
