@@ -14,6 +14,7 @@ class Model_main extends Model{
     }
 
     public function get_data_basket(){
+    	$allPrice = 0;
     	$goods = new MenuWork();
     	foreach ($_SESSION['basket'] as $key => $value) {
         	$arr = $goods->Goods($value);
