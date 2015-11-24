@@ -1,7 +1,11 @@
-<?php if(!isset($_SESSION)){
+<?php 
+if(!isset($_SESSION)){
     session_start();
+} 
+if(!isset($_SESSION['shere'])){
     $_SESSION['shere'] = 0;
-} ?>
+}
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
