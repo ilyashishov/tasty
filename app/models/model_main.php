@@ -20,6 +20,6 @@ class Model_main extends Model{
         	$arr = $goods->Goods($value);
         	$allPrice += $arr[0][0]['price'];
     	}
-    	return print_r(9999);
+    	return 9999;
     }
 }
