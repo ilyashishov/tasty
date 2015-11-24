@@ -100,7 +100,7 @@ if(!isset($_SESSION['shere'])){
      <div class="wripper" style="padding:0px;">
     <div class="s-right">
       <p class="st">ДОБАВЬ СКИДКУ:</p>
-      <div class="s" style="z-index:5;" id="share25">
+      <div class="s <?php if($_SESSION['shere'] == 25) echo "active_shere"; ?>" style="z-index:5;" id="share25">
         <a href="" p="25" class="proc1" >
           <p class="proc" id="proc25">
             25%
@@ -112,7 +112,7 @@ if(!isset($_SESSION['shere'])){
             до и после ДР
           </p></a>
         </div>
-        <div class="s" style="z-index:4;" id="share20">
+        <div class="s <?php if($_SESSION['shere'] == 20) echo "active_shere"; ?>" style="z-index:4;" id="share20">
           <a href="#" p="20" class="proc1" id="p20"  ><p class="proc" style="" id="proc20">
             20%
           </p>    <p class="op" style="" id="op20">
@@ -122,7 +122,7 @@ if(!isset($_SESSION['shere'])){
           не учавствуют)
         </p></a>
       </div>
-      <div class="s" style="z-index:3;" id="share15">
+      <div class="s <?php if($_SESSION['shere'] == 15) echo "active_shere"; ?>" style="z-index:3;" id="share15">
         <a href="" p="15" class="proc1"><p class="proc" id="proc15">
           15%
         </p>
@@ -133,7 +133,7 @@ if(!isset($_SESSION['shere'])){
           15%
         </p>
       </a></div>
-      <div class="s" style="z-index:2;" id="share10">
+      <div class="s <?php if($_SESSION['shere'] == 10) echo "active_shere"; ?>" style="z-index:2;" id="share10">
         <a href="" p="10" class="proc1">    <p class="proc" id="proc10">
           10%
         </p>
@@ -144,7 +144,7 @@ if(!isset($_SESSION['shere'])){
           картой 10%
         </p></a>
       </div>
-      <div class="s" style="z-index:1;" id="share5">
+      <div class="s <?php if($_SESSION['shere'] == 5) echo "active_shere"; ?>" style="z-index:1;" id="share5">
         <a href="" p="5" class="proc1">
           <p class="proc" id="proc5">
             5%
