@@ -57,13 +57,13 @@ $(document).on('click', '.add_good', function(){
 });
 $(document).on('click', '.plus', function(){
 	var id = $(this).attr('id_good');
-	var val = $('#number'+id+' input').val();
+	var val = $('#number'+id+' input').val() - 0;
 	$.ajax({
 		url: '/basket/add',
 		type: 'post',
 		data: {id : id},
 		success: function (data) {
-			$('#number'+id+' input').val((val - 0)+1);
+			$('#number'+id+' input').val(val+1)
 			$('.baskets_cost span').text(data);
 		}
 	});
