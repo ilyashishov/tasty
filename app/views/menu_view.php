@@ -20,7 +20,7 @@
 				$edit = '<a  href="/menu/edit/id/'.$key["id"].'" class="lsf symbol edit-icon" style="font-size: 30px;">edit</a>';
 				$delete = '<a  href="/menu/delete/id/'.$key["id"].'" class="lsf symbol delete-icon" style="font-size: 30px;">delete</a>';
 				$buy = 0;
-				$i = 1;
+				$i = 0;
 				$display = 'none';
 				foreach ($_SESSION['basket'] as $key2 => $value2) {
 					if($key['id'] == $value2 && $buy == 0){
@@ -34,7 +34,7 @@
 						$i++;
 					}
 				}
-				$i--;
+				if(!$i)$i = 1;
 
 				printf('
 						<div class="block">
