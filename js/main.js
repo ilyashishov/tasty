@@ -49,6 +49,7 @@ $(document).on('click', '.add_good', function(){
 				$('.baskets_cost span').text(data);
 				$('#number'+id).hide();
 				buy.attr('buy', 0);
+				$('#number'+id+' input').val(0);
 			}
 		});
 	}
