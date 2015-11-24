@@ -15,5 +15,8 @@ class Model {
 //        }
         $this->_data = $data;
     }
-    public function get_data() { }
+    public function get_data() {
+    	$data['basket'] = 99999;
+    	return $data;
+    }
 }
