@@ -23,3 +23,15 @@ $('.desc_close').click(function(){
 	$('#desc').hide();
     return false;
 });  
+
+$(document).on('click', '.add_good', function(){
+	$.ajax({
+		url: '/basket/add',
+		type: 'post',
+		data: {id : $(this).attr('id')},
+		success: function (data) {
+			concole.log(data);
+		}
+	});
+	return false;
+});
