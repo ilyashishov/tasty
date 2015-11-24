@@ -12,6 +12,9 @@
 			<p class="ves" id="ves">Вес: <span></span> г.</p>
 		</div>
 	</div> 
+	<script type="text/javascript">
+	console.log(<?php print_r($_SESSION['basket']) ?>);
+	</script>
 	<!-- DESC -->
 	<div class="cont2">
 		<?php 
@@ -30,7 +33,6 @@
 						$display = 'none';
 					}
 					if($key['id'] == $value2) $i++;
-
 				}
 				if(!$i)$i = 1;
 
