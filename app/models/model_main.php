@@ -12,4 +12,13 @@ class Model_main extends Model{
     	$arr['category'] = $category->GetCategory();
         return $arr;
     }
+
+    public function get_data_basket(){
+    	$goods = new MenuWork();
+    	foreach ($_SESSION['basket'] as $key => $value) {
+        	$arr = $goods->Goods($value);
+        	$allPrice += $arr[0][0]['price'];
+    	}
+    	return print_r($allPrice);
+    }
 }
