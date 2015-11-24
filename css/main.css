@@ -1458,10 +1458,10 @@ body{
     background: url(/img/share_none.png) !important;
 }
 
-.active_shere p{
+.active_shere p.op{
     color: rgb(93, 79, 42) !important;
 }
 
-.active_shere a p{
+.active_shere p.proc{
     color: rgb(27, 27, 23) !important;
 }
