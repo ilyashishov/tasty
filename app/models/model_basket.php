@@ -16,6 +16,6 @@ class Model_basket extends Model{
         	$allPrice += $arr[0][0]['price'];
     	}
     	// return print_r($arr[0][0]['price']);
-    	return print_r($_SESSION['basket']);
+    	return $allPrice;
     }
 }
