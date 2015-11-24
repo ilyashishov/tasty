@@ -84,10 +84,12 @@
     <div class="border"></div>
     <div style="clear: both"></div>
     <?php 
-    if($url[1] == 'menu'){
-          echo '<a class="a-admin-page" href="/menu/new/id/'.$url[3].'" >Добавить товар</a>';
-          echo '<a class="a-admin-page" href="/menu/new_category">Добавить категорию</a>';
-        }
+      if (isset($_GET['q'])) {
+        if($url[1] == 'menu'){
+            echo '<a class="a-admin-page" href="/menu/new/id/'.$url[3].'" >Добавить товар</a>';
+            echo '<a class="a-admin-page" href="/menu/new_category">Добавить категорию</a>';
+          }
+      }
      ?>
  </div>
      <div class="wripper" style="padding:0px;">
