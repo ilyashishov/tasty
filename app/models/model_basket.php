@@ -14,6 +14,7 @@ class Model_basket extends Model{
      //    	$arr = $goods->Goods($value);
     	// }
     	$arr = $goods->Goods($id);
-    	return print_r($arr[0][0]['price']);
+    	// return print_r($arr[0][0]['price']);
+    	return print_r($_SESSION['basket']);
     }
 }
