@@ -75,6 +75,7 @@ $(document).on('click', '.plus', function(){
 $(document).on('click', '.minus', function(){
 	var id = $(this).attr('id_good');
 	var val = $('#number'+id+' input').val() - 0;
+	var buy = $(this).parent().find('.add_good');
 	if(val > 1){
 		$.ajax({
 			url: '/basket/delete_one',
