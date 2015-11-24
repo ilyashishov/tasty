@@ -26,15 +26,32 @@ $('.desc_close').click(function(){
 
 $(document).on('click', '.add_good', function(){
 	var id = $(this).attr('id');
-	$.ajax({
-		url: '/basket/add',
-		type: 'post',
-		data: {id : id},
-		success: function (data) {
-			console.log(data);
-			$('.baskets_cost span').text(data);
-			$('#number'+id).show();
-		}
-	});
+	var buy = $(this).attr('buy');
+	if(buy){
+		$.ajax({
+			url: '/basket/add',
+			type: 'post',
+			data: {id : id},
+			success: function (data) {
+				console.log(data);
+				$('.baskets_cost span').text(data);
+				$('#number'+id).show();
+				$(this).attr('buy', 1);
+			}
+		});
+	}else{
+		$.ajax({
+			url: '/basket/delete',
+			type: 'post',
+			data: {id : id},
+			success: function (data) {
+				console.log(data);
+				$('.baskets_cost span').text(data);
+				$('#number'+id).hide();
+				$(this).attr('buy', 0);
+			}
+		});
+	}
+	
 	return false;
 });
