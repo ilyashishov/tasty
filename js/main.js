@@ -28,7 +28,7 @@ $(document).on('click', '.add_good', function(){
 	var id = $(this).attr('id');
 	var buy = $(this).attr('buy');
 	console.log(buy);
-	if(buy){
+	if(buy == 0){
 		$.ajax({
 			url: '/basket/add',
 			type: 'post',
