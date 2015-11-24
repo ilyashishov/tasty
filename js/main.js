@@ -30,7 +30,7 @@ $(document).on('click', '.add_good', function(){
 		type: 'post',
 		data: {id : $(this).attr('id')},
 		success: function (data) {
-			concole.log(data);
+			console.log(data);
 		}
 	});
 	return false;
