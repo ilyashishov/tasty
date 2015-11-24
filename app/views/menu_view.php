@@ -21,7 +21,7 @@
 				$delete = '<a  href="/menu/delete/id/'.$key["id"].'" class="lsf symbol delete-icon" style="font-size: 30px;">delete</a>';
 				$buy = 0;
 				$i = 0;
-				foreach ($variable as $key2 => $value2) {
+				foreach ($_SESSION['basket'] as $key2 => $value2) {
 					if($key['id'] == $value2 && $buy == 0){
 						$buy = 1;
 					}else{
