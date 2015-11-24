@@ -12,7 +12,7 @@ class Model_basket extends Model{
     	$goods = new MenuWork();
     	$_SESSION['basket'][] = $id;
     	foreach ($_SESSION['basket'] as $key) {
-        	$arr = $goods->Goods($value);
+        	// $arr = $goods->Goods($value);
         	$allPrice = $key;
     	}
     	// return print_r($arr[0][0]['price']);
