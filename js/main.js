@@ -25,15 +25,16 @@ $('.desc_close').click(function(){
 });  
 
 $(document).on('click', '.add_good', function(){
+	var id = $(this).attr('id');
 	$.ajax({
 		url: '/basket/add',
 		type: 'post',
-		data: {id : $(this).attr('id')},
+		data: {id : id},
 		success: function (data) {
 			console.log(data);
 			$('.baskets_cost span').text(data);
+			$('#number'+id).show();
 		}
 	});
-	console.log($(this).attr('id'));
 	return false;
 });
