@@ -12,9 +12,7 @@
 			<p class="ves" id="ves">Вес: <span></span> г.</p>
 		</div>
 	</div> 
-	<script type="text/javascript">
-	console.log(<?php print_r($_SESSION['basket']) ?>);
-	</script>
+	<?php print_r($_SESSION['basket']) ?>
 	<!-- DESC -->
 	<div class="cont2">
 		<?php 
@@ -24,17 +22,15 @@
 				$delete = '<a  href="/menu/delete/id/'.$key["id"].'" class="lsf symbol delete-icon" style="font-size: 30px;">delete</a>';
 				$buy = 0;
 				$i = 0;
+				$display = 'none';
 				foreach ($_SESSION['basket'] as $key2 => $value2) {
 					if($key['id'] == $value2 && $buy == 0){
 						$buy = 1;
 						$display = 'block';
-					}else{
-						$buy = 0;
-						$display = 'none';
+						break;
 					}
-					if($key['id'] == $value2) $i++;
 				}
-				if(!$i)$i = 1;
+				
 
 				printf('
 						<div class="block">
