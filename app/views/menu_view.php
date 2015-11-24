@@ -48,7 +48,7 @@
 								<!-- value="<?php echo $prow->quantity ?>" --> 
 								<input type="text" title="" class="inputbox input-ultra-mini" size="3" maxlength="4" name="quantity"  value="'.$i.'" />
 								<a href="#" id_good="%s" price="%s"  class="plus" style="left:108px;top:49px" ><img src="/img/plus.png" style="width:14px;height:14px;" alt=""></a>
-								<a href="#" id_good="%s" price="%s" class="minus"  style="left:35px;top:53px" ><img src="/img/minus.png" style="width:15px;height:5px;" alt=""></a>
+								<a href="#" id_good="%s" price="%s" class="minus"  style="left:35px;top:46px" ><img src="/img/minus.png" style="width:15px;height:5px;" alt=""></a>
 							</div>
 							<div class="b">
 								<p class="weight">%s руб./%s г.</p>
