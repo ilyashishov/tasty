@@ -14,6 +14,6 @@ class Model_basket extends Model{
      //    	$arr = $goods->Goods($value);
     	// }
     	$arr = $goods->Goods($id);
-    	return $arr;
+    	return print_r($arr);
     }
 }
