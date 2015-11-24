@@ -193,3 +193,4 @@
   <script src="/js/main.js?<?php echo md5_file("js/main.js")?>" type="text/javascript"></script>
 </body>
 </html>
+<?php session_destroy(); ?>
