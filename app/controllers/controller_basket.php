@@ -16,4 +16,9 @@ class controller_basket extends Controller{
         $data = $this->model->delete_goods($_POST['id']);
         return $data;
     }
+
+    function action_delete_one(){
+        $data = $this->model->delete_one_goods($_POST['id']);
+        return $data;
+    }
 }

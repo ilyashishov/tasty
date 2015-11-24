@@ -49,7 +49,7 @@ $(document).on('click', '.add_good', function(){
 				$('.baskets_cost span').text(data);
 				$('#number'+id).hide();
 				buy.attr('buy', 0);
-				$('#number'+id+' input').val(0);
+				$('#number'+id+' input').val(1);
 			}
 		});
 	}
@@ -68,5 +68,35 @@ $(document).on('click', '.plus', function(){
 		}
 	});
 	$('#number'+id+' input').val(val+1);	
+	return false;
+});
+$(document).on('click', '.minus', function(){
+	var id = $(this).attr('id_good');
+	var val = $('#number'+id+' input').val() - 0;
+	if(val > 1){
+		$.ajax({
+			url: '/basket/delete_one',
+			type: 'post',
+			data: {id : id},
+			success: function (data) {
+				$('.baskets_cost span').text(data);
+			}
+		});
+		$('#number'+id+' input').val(val+1);	
+	}else{
+		$.ajax({
+			url: '/basket/delete',
+			type: 'post',
+			data: {id : id},
+			success: function (data) {
+				console.log(data);
+				$('.baskets_cost span').text(data);
+				$('#number'+id).hide();
+				buy.attr('buy', 0);
+				$('#number'+id+' input').val(1);
+			}
+		});
+	}
+	
 	return false;
 });
