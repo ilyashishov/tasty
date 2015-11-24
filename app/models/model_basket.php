@@ -9,7 +9,7 @@ class Model_basket extends Model{
     public function set_basket($id)
     {
     	$goods = new MenuWork();
-    	array_push($_SESSION['basket'], $id);
+    	$_SESSION['basket'][] = $id;
     	foreach ($_SESSION['basket'] as $key => $value) {
         	$arr = $goods->Goods($value);
         	$allPrice += $arr[0][0]['price'];
