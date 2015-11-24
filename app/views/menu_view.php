@@ -12,7 +12,6 @@
 			<p class="ves" id="ves">Вес: <span></span> г.</p>
 		</div>
 	</div> 
-	<?php print_r($_SESSION['basket']) ?>
 	<!-- DESC -->
 	<div class="cont2">
 		<?php 
@@ -21,7 +20,7 @@
 				$edit = '<a  href="/menu/edit/id/'.$key["id"].'" class="lsf symbol edit-icon" style="font-size: 30px;">edit</a>';
 				$delete = '<a  href="/menu/delete/id/'.$key["id"].'" class="lsf symbol delete-icon" style="font-size: 30px;">delete</a>';
 				$buy = 0;
-				$i = 0;
+				$i = 1;
 				$display = 'none';
 				foreach ($_SESSION['basket'] as $key2 => $value2) {
 					if($key['id'] == $value2 && $buy == 0){
@@ -30,7 +29,12 @@
 						break;
 					}
 				}
-				
+				foreach ($_SESSION['basket'] as $key2 => $value2) {
+					if($key['id'] == $value2){
+						$i++;
+					}
+				}
+				$i--;
 
 				printf('
 						<div class="block">
