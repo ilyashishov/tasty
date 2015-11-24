@@ -31,6 +31,7 @@ $(document).on('click', '.add_good', function(){
 		data: {id : $(this).attr('id')},
 		success: function (data) {
 			console.log(data);
+			$('.baskets_cost span').text(data);
 		}
 	});
 	console.log($(this).attr('id'));

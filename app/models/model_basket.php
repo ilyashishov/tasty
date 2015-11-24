@@ -15,8 +15,6 @@ class Model_basket extends Model{
         	$arr = $goods->Goods($value);
         	$allPrice += $arr[0][0]['price'];
     	}
-    	// return print_r($arr[0][0]['price'])
-    	 session_destroy();
     	return print_r($allPrice);
     }
 }
