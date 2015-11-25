@@ -1166,8 +1166,8 @@ body{
 
 .proc2{
     position: absolute;
-    left: 790px;
-    top: 460px;
+    left: 85px;
+    top: -10px;
     color: #1C1C18;
     font-size: 14px;
 }
@@ -1464,7 +1464,8 @@ body{
 }
 
 .foot{
+    width: 100%;
     position: absolute;
-    bottom: 0px;
+    bottom: 20px;
     left: 0px;
 }
