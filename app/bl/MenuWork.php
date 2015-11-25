@@ -59,7 +59,7 @@ class MenuWork
 	}
 
 
-    public function Share($data){
+    public function Share($id){
         $arr = array();
         $conn = new DbConnector();
         $query = "SELECT * FROM share WHERE id = '$id'";
