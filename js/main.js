@@ -34,7 +34,6 @@ $(document).on('click', '.add_good_share', function(){
 		success: function (data) {
 			console.log(data);
 			$('.baskets_cost span').text(data);
-			$('#number'+id).show();
 			buy.attr('buy', 1);
 		}
 	});

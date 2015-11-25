@@ -7,6 +7,13 @@ class controller_basket extends Controller{
         $this->view = new View();
     }
 
+    function action_index(){
+        $data = $this->model->get_data();
+        $data['goods'] = $this->model->get_all_goods_share();
+        $data['title'] = "Доставка еды - Tasty";
+        $this->view->generate('basket_view.php', 'template_view.php', $data);
+    }
+
     function action_add(){
         $data = $this->model->set_basket($_POST['id']);
         return $data;
