@@ -33,7 +33,7 @@ class Model_basket extends Model{
         $_SESSION['basket_share'][] = $id;
         foreach ($_SESSION['basket_share'] as $key => $value) {
             $arr = $goods->Share($value);
-            $allPrice2 += $arr[0][0]['price'];
+            $allPrice2 = $arr;
         }
         foreach ($_SESSION['basket'] as $key => $value) {
             $arr = $goods->Goods($value);
@@ -43,7 +43,7 @@ class Model_basket extends Model{
         $allPrice -= $allPriceShere;
         $allPrice += $allPrice2;
         $_SESSION['price'] = $allPrice;
-        return print_r($allPrice);
+        return print_r($allPrice2);
     }
 
     public function delete_goods($id){
