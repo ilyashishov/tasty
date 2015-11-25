@@ -9,6 +9,7 @@ class Model_basket extends Model{
     public function set_basket($id)
     {
     	$allPrice = 0;
+        $allPrice2 = 0;
     	$goods = new MenuWork();
     	$_SESSION['basket'][] = $id;
     	foreach ($_SESSION['basket'] as $key => $value) {
@@ -29,6 +30,7 @@ class Model_basket extends Model{
     public function set_basket_share($id)
     {
         $allPrice = 0;
+        $allPrice2 = 0;
         $goods = new MenuWork();
         $_SESSION['basket_share'][] = $id;
         foreach ($_SESSION['basket_share'] as $key => $value) {
@@ -48,6 +50,7 @@ class Model_basket extends Model{
 
     public function delete_goods($id){
     	$allPrice = 0;
+        $allPrice2 = 0;
     	$goods = new MenuWork();
     	foreach ($_SESSION['basket'] as $key => $value) {
         	if($id == $value){
@@ -71,6 +74,7 @@ class Model_basket extends Model{
 
     public function delete_one_goods($id){
     	$allPrice = 0;
+        $allPrice2 = 0;
     	$goods = new MenuWork();
     	foreach ($_SESSION['basket'] as $key => $value) {
         	if($id == $value){
