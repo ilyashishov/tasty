@@ -113,12 +113,13 @@ body{
 
 
 .block img {
-    width: 170px;
+    width: 160px;
     height: 100px;
     /*margin: 5px 5px;*/
 }
 .b{
     background: #2D2D2C;
+    width: 160px;
     height: 85px;
     padding-top: 1px;
     position: relative;
@@ -881,6 +882,7 @@ body{
     font-size:  14px;
     margin-top:     3px;
 }
+
 
 .buy_share{
     width: 18px;
