@@ -58,7 +58,7 @@
 								<a id="%s" buy="'.$buy.'" href="#" price="%s" class="add_good" ><div class="buy"></div></a>
 							</div>
 						</div>
-						',$key["m_img"],$key["name"],$key["desc"],$key["weight"],$key["img"],$key["id"],$key["id"],$key["price"],$key["id"],$key["price"],$key["price"],$key["weight"],$key["name"],$key["desc"],$key["id"],$key["price"]);
+						',$key["img"],$key["name"],$key["desc"],$key["weight"],$key["m_img"],$key["id"],$key["id"],$key["price"],$key["id"],$key["price"],$key["price"],$key["weight"],$key["name"],$key["desc"],$key["id"],$key["price"]);
 			}
 		 ?>
 	</div>
