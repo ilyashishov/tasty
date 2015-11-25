@@ -202,13 +202,13 @@ if(!isset($_SESSION['shere'])){
   </a> <div style="clear: both"></div>
   </div>
   </div>
-  
+
 <div class="wripper" style="background:none;padding:0px;margin:-665px auto;width:960px;">
-  <div class="call_active" id="call_active" style="display:none"> 
+  <div class="call_active" id="call_active" style="display:none; margin-top: -20px;height: 485px;"> 
 
 <div class="form_call">
   <a href="#" class="c_call">
-    <img src="./img/close_call.png" alt="">
+    <img src="/img/close_call.png" alt="">
 </a>
     <div style="clear: both"></div>
 <p class="t_call">Оставьте Ваши контактные данные <br>  
@@ -245,7 +245,7 @@ if(!isset($_SESSION['shere'])){
 </script>
 
 
- 
+
   <script src="/js/main.js?<?php echo md5_file("js/main.js")?>" type="text/javascript"></script>
 </body>
 </html>
