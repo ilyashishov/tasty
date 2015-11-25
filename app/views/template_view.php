@@ -168,7 +168,7 @@ if(!isset($_SESSION['shere'])){
        <?php include $content_view; ?>
      </div>
    </div> 
-    <div class="wripper" style="background: none;position:relative;">
+    <div class="wripper" style="background: none;position:relative; margin-top: 30px;">
     <div class="baskets">
       <div class="block_cost">
       <p id="sum" class="baskets_cost">ВАШ ЗАКАЗ:<span>&nbsp;<?php if(isset($_SESSION['price'])){echo $_SESSION['price'];}else{echo "0";}  ?></span></p> 
