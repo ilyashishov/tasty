@@ -1,3 +1,5 @@
+var price = 0;
+
 (function($){
    	$(window).load(function(){
     	$(".cont2").mCustomScrollbar({
@@ -38,6 +40,7 @@ $(document).on('click', '.add_good_share', function(){
 		data: {id : id},
 		success: function (data) {
 			console.log(data);
+			price = data;
 			$('.baskets_cost span').text(data);
 			buy.attr('buy', 1);
 		}
@@ -54,6 +57,7 @@ $(document).on('click', '.add_good', function(){
 			data: {id : id},
 			success: function (data) {
 				console.log(data);
+				price = data;
 				$('.baskets_cost span').text(data);
 				$('#number'+id).show();
 				buy.attr('buy', 1);
@@ -65,6 +69,7 @@ $(document).on('click', '.add_good', function(){
 			type: 'post',
 			data: {id : id},
 			success: function (data) {
+				price = data;
 				console.log(data);
 				$('.baskets_cost span').text(data);
 				$('#number'+id).hide();
@@ -85,6 +90,7 @@ $(document).on('click', '.plus', function(){
 		type: 'post',
 		data: {id : id},
 		success: function (data) {
+			price = data;
 			$('.baskets_cost span').text(data);
 		}
 	});
@@ -102,6 +108,7 @@ $(document).on('click', '.minus', function(){
 			type: 'post',
 			data: {id : id},
 			success: function (data) {
+				price = data;
 				$('.baskets_cost span').text(data);
 			}
 		});
@@ -113,6 +120,7 @@ $(document).on('click', '.minus', function(){
 			data: {id : id},
 			success: function (data) {
 				console.log(data);
+				price = data;
 				$('.baskets_cost span').text(data);
 				$('#number'+id).hide();
 				buy.attr('buy', 0);
@@ -127,6 +135,11 @@ $(document).on('click', '.minus', function(){
 
 $(document).on('click', '.proc1', function(){
 	var id = $(this).attr('p');
+	if (id == 20) {
+		if(price > 2000){
+			return false;
+		}
+	};
 	$.ajax({
 		url: '/share/set',
 		type: 'post',
