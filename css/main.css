@@ -897,7 +897,7 @@ body{
     position: absolute;
     background-repeat: no-repeat;
     top: 1px;
-    left: 146px;
+    left: 139px;
 }
 
 .buy_share:hover{
@@ -1463,4 +1463,10 @@ body{
 
 .active_shere p.proc{
     color: rgb(27, 27, 23) !important;
+}
+
+.to{
+    position: relative;
+    top: 2px;
+    left: 15px;
 }
