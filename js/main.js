@@ -24,6 +24,22 @@ $('.desc_close').click(function(){
     return false;
 });  
 
+$(document).on('click', '.add_good_share', function(){
+	var id = $(this).attr('id');
+	var buy = $(this);
+	$.ajax({
+		url: '/basket/add_share',
+		type: 'post',
+		data: {id : id},
+		success: function (data) {
+			console.log(data);
+			$('.baskets_cost span').text(data);
+			$('#number'+id).show();
+			buy.attr('buy', 1);
+		}
+	});
+	return false;
+});
 $(document).on('click', '.add_good', function(){
 	var id = $(this).attr('id');
 	var buy = $(this);
