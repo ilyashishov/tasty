@@ -6,7 +6,7 @@
 	</a>
 	<div class="container">
 		<?php 
-			foreach ($data['goods'][0] as $key => $value) {
+			foreach ($data['goods'] as $key => $value) {
 				printf('
 			         <div class="basket_goods" id="good%s">
 			          <a href="#" id="%s" class="delete"><div class="x"></div></a>
