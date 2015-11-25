@@ -17,7 +17,7 @@ class Model_basket extends Model{
     	}
         foreach ($_SESSION['basket_share'] as $key => $value) {
             $arr = $goods->Share($value);
-            $allPrice2 += $arr[0][0]['price'];
+            $allPrice2 += $arr[0][0]['to_price'];
         }
     	$allPriceShere = ($allPrice * $_SESSION['shere']) / 100;
         $allPrice -= $allPriceShere;
@@ -33,7 +33,7 @@ class Model_basket extends Model{
         $_SESSION['basket_share'][] = $id;
         foreach ($_SESSION['basket_share'] as $key => $value) {
             $arr = $goods->Share($value);
-            $allPrice2 = $arr;
+            $allPrice2 += $arr[0][0]['to_price'];
         }
         foreach ($_SESSION['basket'] as $key => $value) {
             $arr = $goods->Goods($value);
@@ -41,9 +41,9 @@ class Model_basket extends Model{
         }
         $allPriceShere = ($allPrice * $_SESSION['shere']) / 100;
         $allPrice -= $allPriceShere;
-        // $allPrice += $allPrice2;
+        $allPrice += $allPrice2;
         $_SESSION['price'] = $allPrice;
-        return print_r($allPrice2);
+        return print_r($allPrice);
     }
 
     public function delete_goods($id){
@@ -60,7 +60,7 @@ class Model_basket extends Model{
     	}
         foreach ($_SESSION['basket_share'] as $key => $value) {
             $arr = $goods->Share($value);
-            $allPrice2 += $arr[0][0]['price'];
+            $allPrice2 += $arr[0][0]['to_price'];
         }
     	$allPriceShere = ($allPrice * $_SESSION['shere']) / 100;
         $allPrice -= $allPriceShere;
@@ -84,7 +84,7 @@ class Model_basket extends Model{
     	}
         foreach ($_SESSION['basket_share'] as $key => $value) {
             $arr = $goods->Share($value);
-            $allPrice2 += $arr[0][0]['price'];
+            $allPrice2 += $arr[0][0]['to_price'];
         }
     	$allPriceShere = ($allPrice * $_SESSION['shere']) / 100;
         $allPrice -= $allPriceShere;
