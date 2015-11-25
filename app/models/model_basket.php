@@ -41,7 +41,7 @@ class Model_basket extends Model{
         }
         $allPriceShere = ($allPrice * $_SESSION['shere']) / 100;
         $allPrice -= $allPriceShere;
-        $allPrice += $allPrice2;
+        // $allPrice += $allPrice2;
         $_SESSION['price'] = $allPrice;
         return print_r($allPrice2);
     }
