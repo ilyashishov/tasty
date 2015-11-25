@@ -9,7 +9,7 @@ class controller_basket extends Controller{
 
     function action_index(){
         $data = $this->model->get_data();
-        // $data['goods'] = $this->model->get_all_goods_share();
+        $data['goods'] = $this->model->get_goods();
         $data['title'] = "Доставка еды - Tasty";
         $this->view->generate('basket_view.php', 'template_view.php', $data);
     }

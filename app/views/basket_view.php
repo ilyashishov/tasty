@@ -5,7 +5,9 @@
 		<p>Свернуть</p>
 	</a>
 	<div class="container">
-		
+		<?php 
+			print_r($data);
+		 ?>
 	</div>
 	<div class="foot">
 		<center><a href="#" class="checkout_2" id="checkout_2" >Оформить доставку</a></center>

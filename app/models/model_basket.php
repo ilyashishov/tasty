@@ -96,4 +96,16 @@ class Model_basket extends Model{
         $_SESSION['price'] = $allPrice;
     	return print_r($allPrice);
     }
+
+
+    public function get_goods(){
+        $goods = new MenuWork();
+        foreach ($_SESSION['basket'] as $key => $value) {
+            $arr['goods'][] = $goods->Goods($value);
+        }
+        foreach ($_SESSION['basket_share'] as $key => $value) {
+            $arr['goods'][] = $goods->Goods($value);
+        }
+        return $arr;
+    }
 }
