@@ -202,6 +202,50 @@ if(!isset($_SESSION['shere'])){
   </a> <div style="clear: both"></div>
   </div>
   </div>
+  
+<div class="wripper" style="background:none;padding:0px;margin:-665px auto;width:960px;">
+  <div class="call_active" id="call_active" style="display:none"> 
+
+<div class="form_call">
+  <a href="#" class="c_call">
+    <img src="./img/close_call.png" alt="">
+</a>
+    <div style="clear: both"></div>
+<p class="t_call">Оставьте Ваши контактные данные <br>  
+                     и мы Вам перезвоним:</p>
+  
+  <form action="sendmail_call.php" method="post">
+    <input type="text" name="name" class="user_call" placeholder = "Ваше ИМЯ "> <br>  
+    <input type="text" name="tel" class="user_call" required  placeholder= "Контактный телефон">
+    
+    
+    <center>
+      <input type="submit" class="submit" style="font-size:14px;top:-155px;left:-4px;" value="Заказать обратный звонок">
+    </center>
+  </form>
+</div>
+
+
+
+  </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+      $('.c_call').click(function(){
+          document.getElementById("call_active").style.display="none";
+          });
+      });
+    $(document).ready(function() {
+      $('.button').click(function(){
+          document.getElementById("call_active").style.display="block";
+          });
+      });
+     
+</script>
+
+
+ 
   <script src="/js/main.js?<?php echo md5_file("js/main.js")?>" type="text/javascript"></script>
 </body>
 </html>
