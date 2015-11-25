@@ -42,7 +42,7 @@ class Model_share extends Model{
 
     public function get_all_goods_share(){
         $goods = new MenuWork();
-        $arr = $goods->AllShare($this->_data['id']);
+        $arr = $goods->AllShare();
         return $arr;
     }
 }
