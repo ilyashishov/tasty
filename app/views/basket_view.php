@@ -18,7 +18,7 @@
 			         <p class="cost_2" id="cost%s"><span>%s %s</span> руб.</p>
 			       </div>
 			       <div style="clear: both"></div>
-       			  ',$value["id"],$value["id"],$value["m_img"],$value["to_price"],$value["price"],$value["name"],$value["weight"],$value["desc"],$value["id"],1,$value["id"],$value["price"],$value["to_price"]);
+       			  ',$value["id"],$value["id"],$value["m_img"],$value["name"],$value["weight"],$value["desc"],$value["id"],1,$value["id"],$value["price"],$value["to_price"]);
 			}
 		 ?>
 	</div>
