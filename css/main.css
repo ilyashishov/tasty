@@ -1166,7 +1166,7 @@ body{
 
 .proc2{
     position: absolute;
-    left: 85px;
+    right: 85px;
     top: -10px;
     color: #1C1C18;
     font-size: 14px;
