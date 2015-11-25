@@ -4,6 +4,11 @@
     		theme:"dark"
     	});
     });
+    $(window).load(function(){
+    	$(".container").mCustomScrollbar({
+    		theme:"light-thick"
+    	});
+    });
 })(jQuery);
 
 $(document).on('click', '.img_open_desc', function(){

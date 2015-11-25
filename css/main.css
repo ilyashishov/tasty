@@ -1469,3 +1469,10 @@ body{
     bottom: 20px;
     left: 0px;
 }
+
+.container{
+    margin: 0px auto;
+    height: 385px;
+    margin-top: 20px;
+    width: 90%;
+}
