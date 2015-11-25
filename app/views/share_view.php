@@ -19,9 +19,9 @@
 			foreach ($data['goods'][0] as $key) {
 				$edit = '<a  href="/share/edit/id/'.$key["id"].'" class="lsf symbol edit-icon" style="font-size: 30px;">edit</a>';
 				$delete = '<a  href="/share/delete/id/'.$key["id"].'" class="lsf symbol delete-icon" style="font-size: 30px;">delete</a>';
-				// $buy = 0;
-				// $i = 0;
-				// $display = 'none';
+				$buy = 0;
+				$i = 0;
+				$display = 'none';
 				// foreach ($_SESSION['basket'] as $key2 => $value2) {
 				// 	if($key['id'] == $value2 && $buy == 0){
 				// 		$buy = 1;
@@ -34,7 +34,7 @@
 				// 		$i++;
 				// 	}
 				// }
-				// if(!$i)$i = 1;
+				if(!$i)$i = 1;
 
 				printf('
 						<div class="block">
