@@ -1,5 +1,5 @@
 
-<div style="">
+<div style="height: 493px;">
 	<div class="basket_active" id="basket_active_2"> 
 		<p class="basket_t">Оставьте контактные данные</p>
 		<a href="#" class="c" id="c_2">
