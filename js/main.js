@@ -139,7 +139,7 @@ $(document).on('click', '.proc1', function(){
 		if(price > 2000){
 
 		}else{
-			alert();
+			alert('Ваш заказ менее 2000 рублей');
 			return false;
 		}
 	};
