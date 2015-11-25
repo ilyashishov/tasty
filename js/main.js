@@ -141,17 +141,3 @@ $(document).on('click', '.proc1', function(){
 	$(this).parent('.s').addClass('active_shere');
 	return false;
 });
-
-
-$(document).ready(function() {
-	$('#c_2').click(function(){
-		document.getElementById("basket_active_2").style.display="none";
-		document.getElementById("basket_active").style.display="block";
-	});
-});
-$(document).ready(function() {
-	$('#checkout_2').click(function(){
-		document.getElementById("basket_active_2").style.display="block";
-		document.getElementById("basket_active").style.display="none";
-	});
-});
