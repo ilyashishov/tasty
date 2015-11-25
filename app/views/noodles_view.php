@@ -25,7 +25,7 @@
    </p>
 
 
-   <img src="./img/menu/lapsha/lapshaimg.png">
+   <img src="/img/menu/lapsha/lapshaimg.png">
 
 
    <p style="float:right;margin-top:-105px;margin-right:5px;" class="discount_cal"><b>Шаг 3:</b><Br>
