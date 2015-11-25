@@ -7,7 +7,7 @@
 	<div class="container">
 		<?php 
 		print_r($data);
-			foreach ($data['goods'] as $key => $value) {
+			foreach ($data['goods'] as $value => $key) {
 				printf('
 			         <div class="basket_goods" id="good%s">
 			          <a href="#" id="%s" class="delete"><div class="x"></div></a>
