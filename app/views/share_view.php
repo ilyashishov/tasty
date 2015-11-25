@@ -55,7 +55,7 @@
 					           <p class="to">%s р</p>
 					           <a id="%s" buy="'.$buy.'" href="#" price="%s" class="add_good_share" ><div class="buy_share"></div></a>
 					        </div>
-							<div class="b" style="height: 66px; width: 100%">
+							<div class="b" style="height: 66px; width: 100\%">
 								<p class="name">%s</p>
 								<p class="m_desc">%s</p>
 							</div>
