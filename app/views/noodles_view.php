@@ -1,4 +1,4 @@
- <div class="cont" style="overflow: hidden;margin-left: 30px;position: relative;height:470px;">
+ <div class="cont" style="overflow: hidden;margin-left: 30px;position: relative;height:470px;margin-bottom: 60px;">
 
   <p class="menu_t" style="">собери сам всего за 200 рублей!
   </p>
