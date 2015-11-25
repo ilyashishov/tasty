@@ -761,7 +761,7 @@ body{
   border-radius:  7px;
 }
 #basket_active{
-    margin-top: -8px;
+    margin-top: 1px;
 }
 .basket_t{
     text-align: center; 
@@ -1033,7 +1033,7 @@ body{
 
 .basket_goods{
     width: 750px;
-    margin-left: 100px;
+    margin-left: 60px;
     padding-top: 30px;
     position: relative;
 }
