@@ -756,7 +756,7 @@ body{
   background: -o-linear-gradient(90deg, rgb(214, 187, 118) 20%, rgb(163, 133, 51) 100%);
   background: -ms-linear-gradient(90deg, rgb(214, 187, 118) 20%, rgb(163, 133, 51) 100%);
   background: linear-gradient(180deg, rgb(214, 187, 118) 20%, rgb(163, 133, 51) 100%);
-  position:   relative;   
+  position:   absolute;   
   z-index: 20;
   border-radius:  7px;
 }
