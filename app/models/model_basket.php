@@ -101,10 +101,10 @@ class Model_basket extends Model{
     public function get_goods(){
         $goods = new MenuWork();
         foreach ($_SESSION['basket'] as $key => $value) {
-            $arr['goods'][] = $goods->Goods($value)[0][0];
+            $arr[] = $goods->Goods($value)[0][0];
         }
         foreach ($_SESSION['basket_share'] as $key => $value) {
-            $arr['goods'][] = $goods->Goods($value)[0][0];
+            $arr[] = $goods->Goods($value)[0][0];
         }
         return $arr;
     }
