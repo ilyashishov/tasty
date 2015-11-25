@@ -173,7 +173,7 @@ if(!isset($_SESSION['shere'])){
       <p id="sum" class="baskets_cost">ВАШ ЗАКАЗ:<span>&nbsp;<?php if(isset($_SESSION['price'])){echo $_SESSION['price'];}else{echo "0";}  ?></span></p> 
         <img src="/img/rub.png" class="baskets_img" alt="">
       </div>    
-      <a href="basket_active.php" class="checkout">ПОСМОТРЕТЬ ЗАКАЗ<img  src="/img/basket_buy.png" alt=""></a>
+      <a href="/basket" class="checkout">ПОСМОТРЕТЬ ЗАКАЗ<img  src="/img/basket_buy.png" alt=""></a>
       <p id="discount"> ВАША СКИДКА <b><span><?php echo $_SESSION['shere']; ?></span>%</b></p>
     </div>
   </div>
