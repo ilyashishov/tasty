@@ -1,8 +1,8 @@
 
-<div style="height: 493px;">
+<div style="height: 466px;">
 	<div class="basket_active" id="basket_active_2"> 
 		<p class="basket_t">Оставьте контактные данные</p>
-		<a href="#" class="c" id="c_2">
+		<a href="<?php print $_SERVER['HTTP_REFERER']; ?>" class="c" id="c_2">
 			<img src="/img/close.png" alt="">
 			<p>Свернуть</p>
 		</a>
