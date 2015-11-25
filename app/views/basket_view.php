@@ -4,12 +4,12 @@
 		<img src="./img/close.png" alt="">
 		<p>Свернуть</p>
 	</a>
-	<div class="cont3">
+	<div class="container">
 		
 	</div>
-	<div class="foot">
+	<foot>
 		<center><a href="#" class="checkout_2" id="checkout_2" >Оформить доставку</a></center>
 		<p class="summ" id="sum">Итого <span>&nbsp;<?=$_SESSION['price']?></span> руб.</p>
 		<p class="proc2" >Скидка <span>&nbsp;<?=$_SESSION['shere']?></span>%</p>
-	</div>
+	</foot>
 </div>
