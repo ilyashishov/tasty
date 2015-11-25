@@ -18,23 +18,23 @@
 			</form>
 		</div>
 		<?php
-		// foreach($data['comments'] as $c){
-		// 	printf('
-		// 		<div class="comment" style="margin-left:-75px;" id="adminComment">
-		// 			<div class="avatar">
+		foreach($data['comments'] as $c){
+			printf('
+				<div class="comment" style="margin-left:-75px;" id="adminComment">
+					<div class="avatar">
 
 
-		// 				<img src="/img/admin_img.png" style="margin-left:680px;"/>
+						<img src="/img/admin_img.png" style="margin-left:680px;"/>
 
-		// 			</div>
-		// 			<div class="treug_admin"  style="margin-left:680px;">
-		// 			</div>
-		// 			<p class="name">%s%s%s</p>
-		// 			<p class="date" title="Added at %s">%s</p>
-		// 			<p>%s</p>
-		// 		</div>
-		// 		',$c['link_open'],$c['name'],$c['link_close'],.date('H:i \o\n d M Y',$c['dt']),date('d M Y',$c['dt']),$d['body']);	
-		// }
+					</div>
+					<div class="treug_admin"  style="margin-left:680px;">
+					</div>
+					<p class="name">%s%s%s</p>
+					<p class="date" title="Added at %s">%s</p>
+					<p>%s</p>
+				</div>
+				',$c['link_open'],$c['name'],$c['link_close'],.date('H:i \o\n d M Y',$c['dt']),date('d M Y',$c['dt']),$d['body']);	
+		}
 		?>
 	</div>
 </div>
