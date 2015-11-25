@@ -33,7 +33,7 @@
 					<p class="date" title="Added at %s">%s</p>
 					<p>%s</p>
 				</div>
-				',$c['link_open'],$c['name'],$c['link_close'],.date('H:i \o\n d M Y',$c['dt']),date('d M Y',$c['dt']),$d['body']);	
+				',$c['link_open'],$c['name'],$c['link_close'],date('H:i \o\n d M Y',$c['dt']),date('d M Y',$c['dt']),$d['body']);	
 		}
 		?>
 	</div>
