@@ -7,9 +7,9 @@
 	<div class="container">
 		
 	</div>
-	<foot>
+	<div class="foot">
 		<center><a href="#" class="checkout_2" id="checkout_2" >Оформить доставку</a></center>
 		<p class="summ" id="sum">Итого <span>&nbsp;<?=$_SESSION['price']?></span> руб.</p>
 		<p class="proc2" >Скидка <span>&nbsp;<?=$_SESSION['shere']?></span>%</p>
-	</foot>
+	</div>
 </div>

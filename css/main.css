@@ -1462,3 +1462,9 @@ body{
     top: 2px;
     left: 15px;
 }
+
+.foot{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
