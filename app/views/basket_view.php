@@ -6,8 +6,7 @@
 	</a>
 	<div class="container">
 		<?php 
-		print_r($data);
-			foreach ($data['goods'] as $value => $key) {
+			foreach ($data['goods'] as $key => $value) {
 				printf('
 			         <div class="basket_goods" id="good%s">
 			          <a href="#" id="%s" class="delete"><div class="x"></div></a>
@@ -25,7 +24,7 @@
 			         <p class="cost_2" id="cost%s"><span>%s</span> руб.</p>
 			       </div>
 			       <div style="clear: both"></div>
-       			  ',$key["id"],$key["id"],$key["m_img"],$key["price"],$key["name"],$key["weight"],$key["desc"],$key["id"],1,$key["id"],$key["price"] ,$key["id"],$key["price"],$key["id"],$key["price"]);
+       			  ',$value["id"],$value["id"],$value["m_img"],$value["price"],$value["name"],$value["weight"],$value["desc"],$value["id"],1,$value["id"],$value["price"] ,$value["id"],$value["price"],$value["id"],$value["price"]);
 			}
 		 ?>
 	</div>

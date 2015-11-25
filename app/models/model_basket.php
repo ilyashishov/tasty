@@ -104,7 +104,7 @@ class Model_basket extends Model{
             $arr[] = $goods->Goods($value)[0][0];
         }
         foreach ($_SESSION['basket_share'] as $key => $value) {
-            $arr[] = $goods->Goods($value)[0][0];
+            $arr[] = $goods->Share($value)[0][0];
         }
         return $arr;
     }
