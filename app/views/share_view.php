@@ -37,7 +37,7 @@
 				if(!$i)$i = 1;
 
 				printf('
-						<div class="block">
+						<div class="block" style="width:170px;">
 							'.$edit.'
 							'.$delete.'
 							<div class="open_desc">
