@@ -6,7 +6,26 @@
 	</a>
 	<div class="container">
 		<?php 
-			print_r($data);
+			foreach ($data['goods'][0] as $key => $value) {
+				printf('
+			         <div class="basket_goods" id="good%s">
+			          <a href="#" id="%s" class="delete"><div class="x"></div></a>
+			          <img src="%s" alt="">
+			          <div class="inf">
+			            <p class="basket_cost" style="font-size: 14px;">%s руб.</p>
+			            <p class="basket_name" style="font-size: 15px;">%s <br> <span style="font-size: 14px;">%s гр.</span></p> <br>
+			            <p class="desc_asket" style="font-size: 12px;">%s</p>
+			          </div>
+			          <div class="number_2" id="number%s" style="">
+			           <input type="text" title="" class="inputbox input-ultra-mini" size="3" maxlength="4" name="quantity"  value="%s" />
+			           <a href="#" id_good="%s" price="%s"  class="plus" style="left:40px;top:25px" ><img src="./img/plus.png" style="width:14px;height:14px;" alt=""></a>
+			           <a href="#" id_good="%s" price="%s" class="minus"  style="left:-25px;top:30px" ><img src="./img/minus.png" style="width:15px;height:5px;" alt=""></a>
+			         </div>
+			         <p class="cost_2" id="cost%s"><span>%s</span> руб.</p>
+			       </div>
+			       <div style="clear: both"></div>
+       			  ',$data["id"],$data["id"],$data2["img"],$data2["price"],$data2["name"],$data2["weight"],$data2["desc"],$data["id"],1,$data["id"],$data2["price"] ,$data["id"],$data2["price"],$data["id"],$data["price"]);
+			}
 		 ?>
 	</div>
 	<div class="foot">
