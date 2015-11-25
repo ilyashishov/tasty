@@ -60,7 +60,7 @@
 								<p class="m_desc">%s</p>
 							</div>
 						</div>
-						',$key["m_img"],$key["name"],$key["desc"],$key["weight"],$key["img"],$key["id"],$key["id"],$key["to_price"],$key["id"],$key["to_price"],$key["do_price"],$key["to_price"],$key["id"],$key["to_price"],$key["name"],$key["m_desc"]);
+						',$key["img"],$key["name"],$key["desc"],$key["weight"],$key["m_img"],$key["id"],$key["id"],$key["to_price"],$key["id"],$key["to_price"],$key["do_price"],$key["to_price"],$key["id"],$key["to_price"],$key["name"],$key["m_desc"]);
 			}
 		 ?>
 	</div>
