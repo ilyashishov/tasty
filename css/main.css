@@ -1481,3 +1481,231 @@ body{
 #basket_active_2{
     height: 557px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.comment{
+    background: rgb(213,187,116); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q1YmI3NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhNDg3MzQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(213,187,116,1) 0%, rgba(164,135,52,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(213,187,116,1)), color-stop(100%,rgba(164,135,52,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(213,187,116,1) 0%,rgba(164,135,52,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(213,187,116,1) 0%,rgba(164,135,52,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(213,187,116,1) 0%,rgba(164,135,52,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(213,187,116,1) 0%,rgba(164,135,52,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5bb74', endColorstr='#a48734',GradientType=0 ); /* IE6-8 */
+border:3px solid  black;
+box-shadow: 3px 3px 7px rgba(0,0,0,0.7);
+}
+
+
+.comment,
+#addCommentContainer{
+    
+    /* Стиль для комментариев  */
+    
+    padding:12px;
+    width:570px;
+    position:relative;
+    background-color:#1B1B17;
+    left: -50px;
+    
+    color:#C9A956;
+    margin-bottom:25px;
+    
+    /* Скругленные углы и тени CSS3 */
+    
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+
+    
+}
+
+
+.comment .avatar{
+
+    /*
+    /   Аватар позиционируется абсолютно. 
+    /   Внешнее смещение для div комментария
+    /*/
+
+    height:53px;
+    left:-70px;
+    position:absolute;
+    width:44px;
+    background:url('img/default_avatar.png') no-repeat ;
+    
+    /* Центрируем вертикально: */
+    
+    margin-top:-25px;
+    top:30px;
+
+    
+}
+
+.comment .avatar img{
+    display:block;
+}
+
+.comment .name{
+        font-size     :15px;
+        padding-bottom:5px;
+        color         : #1B1B17;
+        display       : inline-table;
+        font-style: normal;
+
+}
+
+.comment .date{
+    font-size:10px;
+    padding:6px 0;
+    color: #1B1B17;
+    margin-top: -2px;
+/*    margin-left: -65px;*/
+    display: inline-table;
+}
+
+#adminComment{
+    background: #000;
+}
+
+#adminComment p,#adminComment .name{
+color: #C9A956;
+}
+
+.comment p,
+#addCommentContainer p{
+    font-size:12px;
+    line-height:1.5;
+    overflow-x:hidden;
+    color: #1B1B17;
+    font-style: italic;
+}
+
+
+
+label{
+    font-size:10px;
+}
+
+label span.error{
+    color:red;
+    position:relative;
+    right:-10px;
+}
+
+
+/* Ниже приведенные стили нужны только для демонстрационной страницы: */
+
+#main{
+    position:relative;
+    margin:0 auto;
+    width:427px;
+}
+
+.treug {
+    
+   }
+   .treug::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+
+    left: -20px;  /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-right: 10px solid black; /* Добавляем треугольник */
+   }
+
+
+   .treug_admin::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+
+    left: 594px;  /* Положение треугольника */
+      border: 10px solid transparent; /* Прозрачные границы */
+     border-left: 10px solid black; /* Добавляем треугольник */
+    
+   }
+
+.o_submit{
+    color:  #9F9F87;
+    text-decoration:none;
+    font-weight:700;    
+    float:  right;  
+    margin-right:   40px;
+}
+
+.o_user{
+    background: none;
+    border:     none;
+    color:  #AFAF95;
+    border-bottom:  1px solid   #AFAF95;
+    margin-right:   20px;
+
+}
+
+.o_user_t{
+    background: url(./img/fon_t.png);
+     text-indent: 125px;
+     line-height: 14px;
+     font-size: 13px;
+     border:    none;
+     width:560px;
+     height: 70px; /* Высота поля в пикселах */
+     resize: none; /* Запрещаем изменять размер */
+}
+
+.o_form label{
+    color:  #B1B197;
+    position:   relative;
+    font-size:  13px;
+    top:4px;
+    margin-left:    4px;
+    margin-right:   4px;
+}
+#addCommentContainer{
+    border: 2px solid #A28432;
+    z-index:    10;
+    display:    none;   
+    margin-bottom:20px;
+    
+}
+
+#submit{
+    
+    background: none;
+    border:none;
+    color:#9F9F87;
+    cursor:pointer;
+    font-size:  16px;
+    font-weight:bold;
+    float: right;
+
+}
+
+#submit:hover, .o_submit:hover{
+text-decoration:    underline;  
+color:  #A08643
+}
+
+
+.delete_comment{
+    float: right;
+}
+
+.delete_comment_input{
+    display: none;
+}
