@@ -21,10 +21,10 @@
 			           <a href="#" id_good="%s" price="%s"  class="plus" style="left:40px;top:25px" ><img src="/img/plus.png" style="width:14px;height:14px;" alt=""></a>
 			           <a href="#" id_good="%s" price="%s" class="minus"  style="left:-25px;top:30px" ><img src="/img/minus.png" style="width:15px;height:5px;" alt=""></a>
 			         </div>
-			         <p class="cost_2" id="cost%s"><span>%s</span> руб.</p>
+			         <p class="cost_2" id="cost%s"><span>%s %s</span> руб.</p>
 			       </div>
 			       <div style="clear: both"></div>
-       			  ',$value["id"],$value["id"],$value["m_img"],$value["price"],$value["name"],$value["weight"],$value["desc"],$value["id"],1,$value["id"],$value["price"] ,$value["id"],$value["price"],$value["id"],$value["price"]);
+       			  ',$value["id"],$value["id"],$value["m_img"],$value["price"],$value["name"],$value["weight"],$value["desc"],$value["id"],1,$value["id"],$value["price"] ,$value["id"],$value["price"],$value["id"],$value["price"],$value["to_price"]);
 			}
 		 ?>
 	</div>
