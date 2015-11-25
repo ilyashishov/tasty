@@ -157,3 +157,103 @@ $(document).on('click', '.proc1', function(){
 	$(this).parent('.s').addClass('active_shere');
 	return false;
 });
+
+
+$(document).ready(function() {
+	$('.c_call').click(function(){
+		$('#call_active').hide();
+	});
+	$('.button').click(function(){
+		$('#call_active').show();
+	});
+});
+
+
+$(document).ready(function() {
+	$('.o_submit').click(function(){
+		document.getElementById("addCommentContainer").style.display="block";
+		document.getElementById("o_submit").style.display="none";
+		$(".cont3").mCustomScrollbar({
+			theme:"dark",
+			setTop: "10000px"
+		});
+	});
+
+	$('#submit').click(function(){
+		document.getElementById("addCommentContainer").style.display="none";
+		document.getElementById("o_submit").style.display="block";
+	});
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+	/* Следующий код выполняется только после загрузки DOM */
+	
+	/* Данный флаг предотвращает отправку нескольких комментариев: */
+	var working = false;
+	
+	/* Ловим событие отправки формы: */
+	$('#addCommentForm').submit(function(e){
+
+ 		e.preventDefault();
+		if(working) return false;
+		
+		working = true;
+		$('#submit').val('Занято...');
+		$('span.error').remove();
+		
+		/* Отправляем поля формы в submit.php: */
+		$.post('submit.php',$(this).serialize(),function(msg){
+
+			working = false;
+			$('#submit').val('Отправить');
+			
+			if(msg.status){
+
+				/* 
+				/	Если вставка была успешной, добавляем комментарий 
+				/	ниже последнего на странице с эффектом slideDown
+				/*/
+
+				$(msg.html).hide().insertBefore('#addCommentContainer').slideDown();
+				$('#body').val('');
+			}
+			else {
+
+				/*
+				/	Если есть ошибки, проходим циклом по объекту
+				/	msg.errors и выводим их на страницу
+				/*/
+				
+				$.each(msg.errors,function(k,v){
+					$('label[for='+k+']').append('<span class="error">'+v+'</span>');
+				});
+			}
+		},'json');
+
+	});
+	
+});

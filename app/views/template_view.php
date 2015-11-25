@@ -224,28 +224,8 @@ if(!isset($_SESSION['shere'])){
     </center>
   </form>
 </div>
-
-
-
   </div>
 </div>
-
-<script>
-    $(document).ready(function() {
-      $('.c_call').click(function(){
-          document.getElementById("call_active").style.display="none";
-          });
-      });
-    $(document).ready(function() {
-      $('.button').click(function(){
-          document.getElementById("call_active").style.display="block";
-          });
-      });
-     
-</script>
-
-
-
   <script src="/js/main.js?<?php echo md5_file("js/main.js")?>" type="text/javascript"></script>
 </body>
 </html>
