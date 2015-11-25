@@ -137,6 +137,9 @@ $(document).on('click', '.proc1', function(){
 	var id = $(this).attr('p');
 	if (id == 20) {
 		if(price > 2000){
+
+		}else{
+			alert();
 			return false;
 		}
 	};
