@@ -6,6 +6,7 @@
 	</a>
 	<div class="container">
 		<?php 
+		print_r($data);
 			foreach ($data['goods'] as $key => $value) {
 				printf('
 			         <div class="basket_goods" id="good%s">
