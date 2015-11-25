@@ -158,8 +158,8 @@ if(!isset($_SESSION['shere'])){
           </p>
         </a>
       </div>
-      <div class="del_proc">
-        <a href="#" id="del_proc"><!-- <img src="./img/close_call.png" alt=""> -->Отменить скидку</a></div>
+      <div class="del_proc" style="z-index: 100; position: relative;">
+        <a href="#" p='0' class=".proc1" id="del_proc"><!-- <img src="./img/close_call.png" alt=""> -->Отменить скидку</a></div>
       </div>
     </div>  
 
