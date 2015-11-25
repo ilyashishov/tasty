@@ -19,6 +19,16 @@ class MenuWork
         $arr = $conn->select($query);
         return $arr;
     }
+
+    public function AllShare(){
+        $arr = array();
+        $conn = new DbConnector();
+        $query = "SELECT * FROM share";
+        $arr = $conn->select($query);
+        return $arr;
+    }
+
+
     public function Goods($id){
     	$arr = array();
         $conn = new DbConnector();
@@ -47,4 +57,13 @@ class MenuWork
         $conn->select($query);
         return $conn->error();
 	}
+
+
+    public function Share($data){
+        $arr = array();
+        $conn = new DbConnector();
+        $query = "SELECT * FROM share WHERE id = '$id'";
+        $arr = $conn->select($query);
+        return $arr;
+    }
 }

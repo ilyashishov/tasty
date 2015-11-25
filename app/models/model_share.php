@@ -39,4 +39,10 @@ class Model_share extends Model{
     	$_SESSION['price'] = $allPrice;
     	return print_r($allPrice);
     }
+
+    public function get_all_goods_share(){
+        $goods = new MenuWork();
+        $arr = $goods->AllShare($this->_data['id']);
+        return $arr;
+    }
 }

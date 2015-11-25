@@ -9,6 +9,7 @@ class controller_share extends Controller{
 
     function action_menu(){
         $data = $this->model->get_data();
+        $data['goods'] = $this->model->get_all_goods_share();
         $data['title'] = "Доставка еды - Tasty";
         $data["menu"][1] = "m_active";
         $this->view->generate('share_view.php', 'template_view.php', $data);

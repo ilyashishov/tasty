@@ -12,6 +12,11 @@ class controller_basket extends Controller{
         return $data;
     }
 
+    function action_add_share(){
+        $data = $this->model->set_basket_share($_POST['id']);
+        return $data;
+    }
+
     function action_delete(){
         $data = $this->model->delete_goods($_POST['id']);
         return $data;
