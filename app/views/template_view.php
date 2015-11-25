@@ -4,6 +4,7 @@ if(!isset($_SESSION)){
 } 
 if(!isset($_SESSION['shere'])){
     $_SESSION['shere'] = 0;
+    $_SESSION['price'] = 0;
 }
 ?>
 <!DOCTYPE html>
