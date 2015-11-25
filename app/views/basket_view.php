@@ -12,7 +12,7 @@
 			          <a href="#" id="%s" class="delete"><div class="x"></div></a>
 			          <img src="%s" alt="">
 			          <div class="inf">
-			            <p class="basket_cost" style="font-size: 14px;">%s руб.</p>
+			            <p class="basket_cost" style="font-size: 14px;">%s%s руб.</p>
 			            <p class="basket_name" style="font-size: 15px;">%s <br> <span style="font-size: 14px;">%s гр.</span></p> <br>
 			            <p class="desc_asket" style="font-size: 12px;">%s</p>
 			          </div>
