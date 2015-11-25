@@ -14,6 +14,11 @@ class controller_basket extends Controller{
         $this->view->generate('basket_view.php', 'template_view.php', $data);
     }
 
+    function action_final(){
+        $data['title'] = "Доставка еды - Tasty";
+        $this->view->generate('final_view.php', 'template_view.php', $data);
+    }
+
     function action_add(){
         $data = $this->model->set_basket($_POST['id']);
         return $data;
