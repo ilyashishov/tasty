@@ -3,7 +3,7 @@
 <div class="cont3" style="margin-left: 35px;overflow: hidden;width:715px;">
 	<div id="main">
 		<div id="addCommentContainer" style="">
-			<form id="addCommentForm" method="post" action="comments.php">
+			<form id="addCommentForm" method="post" action="/comments/create">
 				<div class="o_form">
 					<label for="name">Ваше ИМЯ:</label>
 					<input type="text" name="name" id="name" class="o_user"  />
