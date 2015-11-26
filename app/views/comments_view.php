@@ -20,7 +20,7 @@
 		</div>
 		<?php
 		
-		foreach($data['comments'][0][0] as $c){
+		foreach($data['comments'][0] as $c){
 			$comments[] = new Comment($c);
 		}
 		foreach($comments as $c){
