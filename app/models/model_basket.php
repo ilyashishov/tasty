@@ -148,20 +148,22 @@ class Model_basket extends Model{
           /* А эта функция как раз занимается отправкой письма на указанный вами email */
         $sub='Tasty'; //сабж
         $email='tasty72@mail.ru'; // от кого
-        mail($address,
-           $sub,
-           $mes,
-           "From: tasty72@mail.ru\r\n" 
-           ."Content-type: text/html; charset=utf-8\r\n"
-           ."X-Mailer: PHP mail script"
-           );
-       $stat = mail($address2,
-           $sub,
-           $mes,
-           "From: tasty72@mail.ru\r\n" 
-           ."Content-type: text/html; charset=utf-8\r\n"
-           ."X-Mailer: PHP mail script"
-           );
+       //  mail($address,
+       //     $sub,
+       //     $mes,
+       //     "From: tasty72@mail.ru\r\n" 
+       //     ."Content-type: text/html; charset=utf-8\r\n"
+       //     ."X-Mailer: PHP mail script"
+       //     );
+       // $stat = mail($address2,
+       //     $sub,
+       //     $mes,
+       //     "From: tasty72@mail.ru\r\n" 
+       //     ."Content-type: text/html; charset=utf-8\r\n"
+       //     ."X-Mailer: PHP mail script"
+       //     );
+
+        mail('stalk1258@gmail.com', 'Tasty', 'test');
         echo $files;
         echo "<br><br><br><br>";
         echo $stat;
