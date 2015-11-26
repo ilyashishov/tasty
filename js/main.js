@@ -231,7 +231,11 @@ $(document).ready(function(){
 		
 		/* Отправляем поля формы в submit.php: */
 		$.post('/comments/create',$(this).serialize(),function(msg){
-
+			location.reload();
+			$(".cont3").mCustomScrollbar({
+				theme:"dark",
+				setTop: "10000px"
+			});
 			working = false;
 			$('#submit').val('Отправить');
 			
