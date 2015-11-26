@@ -19,7 +19,7 @@ class CommentsWork
             $arr['url'] = '';
         }
         if($validates){
-            $query = "INSERT INTO comments(name,url,email,body,admin,dt) VALUES ('".$arr['name']."','".$arr['url']."','".$arr['email']."','".$arr['body']."','".$arr['admin'].",'".date('r',time())."')";
+            $query = "INSERT INTO comments(name,url,email,body,admin,dt) VALUES ('".$arr['name']."','".$arr['url']."','".$arr['email']."','".$arr['body']."','".$arr['admin'].",'".date("Y-m-d H:i:s")."')";
             $arr = $conn->select($query);
             $arr['dt'] = date('r',time());
             $arr = array_map('stripslashes',$arr);
