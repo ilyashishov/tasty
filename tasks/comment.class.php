@@ -51,7 +51,7 @@ class Comment
 				<div class="avatar">
 					
 
-					<img src="./img/admin_img.png" style="margin-left:680px;"/>
+					<img src="/img/admin_img.png" style="margin-left:680px;"/>
 					
 				</div>
 				<div class="treug_admin"  style="margin-left:680px;">

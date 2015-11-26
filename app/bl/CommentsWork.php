@@ -17,7 +17,7 @@ class CommentsWork
         $validates = Comment::validate($arr);
 
         if($validates){
-            $query ="INSERT INTO comments(name,url,email,body,admin) VALUES ('".$arr['name']."','".$arr['url']."','".$arr['email']."','".$arr['body']."','".$arr['admin']."')";
+            $query = "INSERT INTO comments(name,url,email,body,admin, 'date') VALUES ('".$arr['name']."','".$arr['url']."','".$arr['email']."','".$arr['body']."','".$arr['admin'].",'".date('r',time())."')";
             $arr = $conn->select($query);
             $arr['dt'] = date('r',time());
             $arr['id'] = mysql_insert_id();
