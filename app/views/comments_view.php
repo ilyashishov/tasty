@@ -18,7 +18,7 @@
 			</form>
 		</div>
 		<?php
-		foreach($data['comments'] as $c){
+		foreach($data['comments'][0][0] as $c){
 			printf('
 				<div class="comment" style="margin-left:-75px;" id="adminComment">
 					<div class="avatar">

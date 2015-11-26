@@ -8,7 +8,8 @@ class Model_comments extends Model{
 
     public function get_data()
     {
-    	$arr['title'] = 'Доставка еды - Tasty';
+    	$comments = new CommentsWork();
+    	$arr = $comments->GetComments();
         return $arr;
     }
 }
