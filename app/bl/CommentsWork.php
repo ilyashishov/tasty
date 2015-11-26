@@ -12,7 +12,7 @@ class CommentsWork
         return $arr;
     }
 
-    public function SetComment(){
+    public function SetComment($arr){
         $conn = new DbConnector();
         $validates = Comment::validate($arr);
 
