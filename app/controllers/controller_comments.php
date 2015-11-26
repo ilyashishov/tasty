@@ -18,7 +18,6 @@ class controller_comments extends Controller{
     }
 
     function action_create(){
-        echo $_POST;
         $data = $this->model->create_comment($_POST);
         return $data;
     }
