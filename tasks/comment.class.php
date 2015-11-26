@@ -20,7 +20,7 @@ class Comment
 		*/
 		
 		// Устанавливаем псевдоним, чтобы не писать каждый раз $this->data:
-  $d = &$this->data;
+  		$d = &$this->data;
 		
 		$link_open = '';
 		$link_close = '';
@@ -133,11 +133,6 @@ class Comment
 			return false;
 		}
 		
-		// Если данные введены правильно, подчищаем данные и копируем их в $arr:
-		
-		foreach($data as $k=>$v){
-			$arr[$k] = mysql_real_escape_string($v);
-		}
 		
 		// email дожен быть в нижнем регистре:
 		

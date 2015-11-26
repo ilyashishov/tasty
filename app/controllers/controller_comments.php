@@ -16,4 +16,9 @@ class controller_comments extends Controller{
         $data["menu"][3] = "m_active";
         $this->view->generate('comments_view.php', 'template_view.php', $data);
     }
+
+    function action_create(){
+        $data = $this->model->SetComment($_POST);
+        return $data;
+    }
 }

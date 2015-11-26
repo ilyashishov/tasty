@@ -173,6 +173,10 @@ $(document).ready(function() {
 	$('.o_submit').click(function(){
 		$('#addCommentContainer').show();
 		$('#o_submit').hide();
+		$(".cont3").mCustomScrollbar({
+			theme:"dark",
+			setTop: "10000px"
+		});
 	});
 
 	$('#submit').click(function(){
@@ -181,7 +185,7 @@ $(document).ready(function() {
 	});
 	$(".cont3").mCustomScrollbar({
 		theme:"dark",
-		setTop: "10000px"
+
 	});
 });
 
@@ -226,7 +230,7 @@ $(document).ready(function(){
 		$('span.error').remove();
 		
 		/* Отправляем поля формы в submit.php: */
-		$.post('submit.php',$(this).serialize(),function(msg){
+		$.post('/comments/create',$(this).serialize(),function(msg){
 
 			working = false;
 			$('#submit').val('Отправить');
