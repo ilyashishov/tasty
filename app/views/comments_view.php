@@ -13,7 +13,7 @@
 					<label for="body" style="top:17px;">Ваше сообщение:</label>
 					<textarea name="body" id="body" cols="20" rows="5" class="o_user o_user_t" style="overflow: hidden;" maxlength="290"></textarea>
 					<input type="submit" id="submit" value="оставить отзыв" />
-					<input type="text" name="admin" id="admin" value="0" style="display:none" />
+					<input type="text" name="admin" id="admin" value="false" style="display:none" />
 					<div style="clear: both"></div>
 				</div>
 			</form>
