@@ -134,33 +134,42 @@ class Model_basket extends Model{
         $files .="<tr style='border:none;'><td style='border:none;'></td><td style='border:none;'><p style='font-weight: bold;text-align:center;font-size:20px;border:none;'>Контактные данные</p></td><td style='border:none;'></td><td style='border:none;'></td></tr>";
         $files .="<tr><td>ИМЯ</td><td>".$data['name']."</td>  </tr><tr><td>Телефон</td><td>".$data['tel']."</td>  </tr><tr><td>Улица</td><td>".$data['ul']."</td>  </tr><tr><td>Подъезд</td><td>".$data['pod']."</td>  </tr><tr><td>Этаж</td><td>".$data['et']."</td>  </tr><tr><td>Квартира</td><td>".$data['kv']."</td>  </tr><tr><td>Пожелания</td><td>".$data['po']."</td>  </tr>";
         $files .="</table>";
-        file_put_contents('/var/www/tasty72/logins.txt',$files);
+        // file_put_contents('/var/www/tasty72/logins.txt',$files);
 
         $address = "stalk1258@gmail.com";
         $address2 = "tasty7272@mail.ru";
 
+<<<<<<< HEAD
         $mes = file_get_contents('/var/www/tasty72/logins.txt');
+=======
+        // $mes = file_get_contents('/var/www/tasty72/logins.txt');
+        $mes = $files;
+>>>>>>> 940f678db49ec35dc070ffe15edde6d155304696
         $headers = "MIME-Version: 1.0\r\n";
         $headers .= "Content-type: text/html; charset=windows-1251\r\n";
-        $headers .= "To: $to\r\n";
+        $headers .= "To: tasty72@mail.ru\r\n";
         $headers .= "From: Имя отправителя <postmaster@domain.tld>";
           /* А эта функция как раз занимается отправкой письма на указанный вами email */
         $sub='Tasty'; //сабж
         $email='tasty72@mail.ru'; // от кого
-        mail($address,
-           $sub,
-           $mes,
-           "From: tasty72@mail.ru\r\n" 
-           ."Content-type: text/html; charset=utf-8\r\n"
-           ."X-Mailer: PHP mail script"
-           );
-        mail($address2,
-           $sub,
-           $mes,
-           "From: tasty72@mail.ru\r\n" 
-           ."Content-type: text/html; charset=utf-8\r\n"
-           ."X-Mailer: PHP mail script"
-           );
+       //  mail($address,
+       //     $sub,
+       //     $mes,
+       //     "From: tasty72@mail.ru\r\n" 
+       //     ."Content-type: text/html; charset=utf-8\r\n"
+       //     ."X-Mailer: PHP mail script"
+       //     );
+       // $stat = mail($address2,
+       //     $sub,
+       //     $mes,
+       //     "From: tasty72@mail.ru\r\n" 
+       //     ."Content-type: text/html; charset=utf-8\r\n"
+       //     ."X-Mailer: PHP mail script"
+       //     );
+
+        mail('stalk1258@gmail.com', 'Tasty', 'test');
         echo $files;
+        echo "<br><br><br><br>";
+        echo $stat;
     }
 }
