@@ -1547,7 +1547,7 @@ box-shadow: 3px 3px 7px rgba(0,0,0,0.7);
     left:-70px;
     position:absolute;
     width:44px;
-    background:url('img/default_avatar.png') no-repeat ;
+    background:url('/img/default_avatar.png') no-repeat ;
     
     /* Центрируем вертикально: */
     
