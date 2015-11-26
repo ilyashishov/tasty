@@ -12,4 +12,10 @@ class Model_comments extends Model{
     	$arr = $comments->GetComments();
         return $arr;
     }
+
+    public function create_comment($arr){
+        $comment = new CommentsWork();
+    	$arr = $comment->SetComment($arr);
+        return $arr;
+    }
 }
