@@ -164,6 +164,6 @@ class Model_basket extends Model{
            );
         echo $files;
         echo "<br><br><br><br>";
-        echo ;
+        echo $stat;
     }
 }
