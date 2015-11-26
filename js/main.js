@@ -171,17 +171,17 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	$('.o_submit').click(function(){
-		document.getElementById("addCommentContainer").style.display="block";
-		document.getElementById("o_submit").style.display="none";
-		$(".cont3").mCustomScrollbar({
-			theme:"dark",
-			setTop: "10000px"
-		});
+		$('#addCommentContainer')show();
+		$('#o_submit').hide();
 	});
 
 	$('#submit').click(function(){
 		document.getElementById("addCommentContainer").style.display="none";
 		document.getElementById("o_submit").style.display="block";
+	});
+	$(".cont3").mCustomScrollbar({
+		theme:"dark",
+		setTop: "10000px"
 	});
 });
 
