@@ -112,7 +112,7 @@ class Model_basket extends Model{
     public function send_bid($data){
         $allPrice = 0;
         $goods = new MenuWork();
-        $files .="<table border='1'style='text-align:center'> ";
+        $files ="<table border='1'style='text-align:center'> ";
         $files .="<tr style='font-weight: bold;text-align:center'><td> Название товара </td><td> Описание </td><td> Стоимость 1 ед.</td></tr>";
         $files .="<tr style='font-weight: bold;text-align:center'><td></td><td>Товары из меню</td><td></td></tr>";
         foreach ($_SESSION['basket'] as $key => $value) {
@@ -128,7 +128,7 @@ class Model_basket extends Model{
         }
 
         $files .="<tr  style='border:1px solid red;' ><td></td><td></td><td>  </td><td>  </td></tr>";
-        $files .="<tr  style='font-weight: bold;text-align:center' ><td>Скидка</td><td></td><td></td><td> ".$_SESSION['share']."% </td></tr>";
+        $files .="<tr  style='font-weight: bold;text-align:center' ><td>Скидка</td><td></td><td></td><td> ".$_SESSION['shere']."% </td></tr>";
         $files .="<tr  style='font-weight: bold;text-align:center' ><td>Общая стоимость </td><td></td><td></td><td> ".$allPrice." </td></tr>";
         $files .="<tr  style='font-weight: bold;text-align:center' ><td>Общая стоимость с учетом скидки</td><td></td><td></td><td> ".$_SESSION['price']." </td></tr>";
         $files .="<tr style='border:none;'><td style='border:none;'></td><td style='border:none;'><p style='font-weight: bold;text-align:center;font-size:20px;border:none;'>Контактные данные</p></td><td style='border:none;'></td><td style='border:none;'></td></tr>";
@@ -155,7 +155,7 @@ class Model_basket extends Model{
            ."Content-type: text/html; charset=utf-8\r\n"
            ."X-Mailer: PHP mail script"
            );
-        mail($address2,
+       $stat = mail($address2,
            $sub,
            $mes,
            "From: tasty72@mail.ru\r\n" 
@@ -163,5 +163,7 @@ class Model_basket extends Model{
            ."X-Mailer: PHP mail script"
            );
         echo $files;
+        echo "<br><br><br><br>";
+        echo ;
     }
 }
