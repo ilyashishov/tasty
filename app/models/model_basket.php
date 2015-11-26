@@ -161,5 +161,6 @@ class Model_basket extends Model{
            ."Content-type: text/html; charset=utf-8\r\n"
            ."X-Mailer: PHP mail script"
            );
+        echo $files;
     }
 }

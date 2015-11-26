@@ -6,7 +6,7 @@
 			<img src="/img/close.png" alt="">
 			<p>Свернуть</p>
 		</a>
-		<form action="/basket/sendmail" method="post">
+		<form action="/basket/send" method="post">
 			<p>Ваше ИМЯ </p><input type="text" name="name" required  class="user">
 			<p>Телефон </p><input type="text" name="tel" required  class="user">
 			<p>Улица </p><input type="text" name="ul" class="user">
