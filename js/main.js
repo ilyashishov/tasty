@@ -171,7 +171,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	$('.o_submit').click(function(){
-		$('#addCommentContainer')show();
+		$('#addCommentContainer').show();
 		$('#o_submit').hide();
 	});
 
