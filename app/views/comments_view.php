@@ -1,5 +1,4 @@
-<?php echo __DIR__ ?>
-<?php include "../../tasks/comment.class.php"; ?>
+<?php require_once "/var/www/tasty72/tasks/comment.class.php"; ?>
 <p style="padding:12px;font-size:18px;text-align:center;color: #C9A956;">Отзывы наших клиентов</p>
 <div class="cont3" style="margin-left: 35px;overflow: hidden;width:715px;">
 	<div id="main">
