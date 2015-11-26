@@ -23,7 +23,8 @@ class CommentsWork
             $arr = $conn->select($query);
             $arr['dt'] = date('r',time());
             $arr = array_map('stripslashes',$arr);
-
+            print_r($arr);
+            print_r($conn->error());
             $insertedComment = new Comment($arr);
 
             return json_encode(array('status'=>1,'html'=>$insertedComment->markup()));
