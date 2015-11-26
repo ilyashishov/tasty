@@ -1,3 +1,4 @@
+<?php include __DIR__."../../tasks/comment.class.php"; ?>
 <p style="padding:12px;font-size:18px;text-align:center;color: #C9A956;">Отзывы наших клиентов</p>
 <div class="cont3" style="margin-left: 35px;overflow: hidden;width:715px;">
 	<div id="main">
@@ -18,22 +19,12 @@
 			</form>
 		</div>
 		<?php
+		
 		foreach($data['comments'][0][0] as $c){
-			printf('
-				<div class="comment" style="margin-left:-75px;" id="adminComment">
-					<div class="avatar">
-
-
-						<img src="/img/admin_img.png" style="margin-left:680px;"/>
-
-					</div>
-					<div class="treug_admin"  style="margin-left:680px;">
-					</div>
-					<p class="name">%s%s%s</p>
-					<p class="date" title="Added at %s">%s</p>
-					<p>%s</p>
-				</div>
-				',$c['link_open'],$c['name'],$c['link_close'],date('H:i \o\n d M Y',$c['dt']),date('d M Y',$c['dt']),$d['body']);	
+			$comments[] = new Comment($c);
+		}
+		foreach($comments as $c){
+			echo $c->markup();
 		}
 		?>
 	</div>
