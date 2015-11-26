@@ -142,7 +142,7 @@ class Model_basket extends Model{
         $mes = file_get_contents('/var/www/tasty72/logins.txt');
         $headers = "MIME-Version: 1.0\r\n";
         $headers .= "Content-type: text/html; charset=windows-1251\r\n";
-        $headers .= "To: $to\r\n";
+        $headers .= "To: tasty72@mail.ru\r\n";
         $headers .= "From: Имя отправителя <postmaster@domain.tld>";
           /* А эта функция как раз занимается отправкой письма на указанный вами email */
         $sub='Tasty'; //сабж
