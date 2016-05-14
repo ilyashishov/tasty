@@ -6,6 +6,7 @@ if(!isset($_SESSION['shere'])){
     $_SESSION['shere'] = 0;
     $_SESSION['price'] = 0;
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -91,7 +92,7 @@ if(!isset($_SESSION['shere'])){
     <div style="clear: both"></div>
     <?php 
       if (isset($_GET['q'])) {
-        if($url[1] == 'menu'){
+        if($url[1] == 'menu' && $_SESSION['hesh']){
             echo '<a class="a-admin-page" href="/menu/new/id/'.$url[3].'" >Добавить товар</a>';
             echo '<a class="a-admin-page" href="/menu/new_category">Добавить категорию</a>';
           }

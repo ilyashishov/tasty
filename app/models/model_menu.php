@@ -9,7 +9,15 @@ class Model_menu extends Model{
     public function get_data()
     {
     	$category = new MenuWork();
+        $admin = new AdminWork();
     	$arr = $category->GetCategory();
+        $authorized = $admin->authorized(); 
+        if($authorized.length() == 0){
+            $authorized = false;
+        }else{
+            $authorized = true;
+        }
+        $arr['authorized'] = $authorized;
         return $arr;
     }
     public function get_all_goods(){

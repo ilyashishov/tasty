@@ -139,12 +139,9 @@ class Model_basket extends Model{
         $address = "stalk1258@gmail.com";
         $address2 = "tasty7272@mail.ru";
 
-<<<<<<< HEAD
-        $mes = file_get_contents('/var/www/tasty72/logins.txt');
-=======
+
         // $mes = file_get_contents('/var/www/tasty72/logins.txt');
         $mes = $files;
->>>>>>> 940f678db49ec35dc070ffe15edde6d155304696
         $headers = "MIME-Version: 1.0\r\n";
         $headers .= "Content-type: text/html; charset=windows-1251\r\n";
         $headers .= "To: tasty72@mail.ru\r\n";
